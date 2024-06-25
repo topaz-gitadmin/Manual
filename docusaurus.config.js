@@ -12,15 +12,15 @@ const config = {
   trailingSlash: true,
 
   // Set the production url of your site here
-  url: 'https://fusion5-businesscentral.github.io',
+  url: 'https://topaz-gitadmin.github.io/Manual/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Fusion5-BusinessCentral', // Usually your GitHub org/user name.
-  projectName: 'fusion5-businesscentral.github.io', // Usually your repo name.
+  organizationName: 'Topaz-gitadmin', // Usually your GitHub org/user name.
+  projectName: 'Manual', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
