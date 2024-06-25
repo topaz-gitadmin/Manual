@@ -1,8 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import {themes as prismThemes} from 'prism-react-renderer';
+
+//const lightCodeTheme = require('prism-react-renderer/themes/github');
+//const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -12,10 +14,10 @@ const config = {
   trailingSlash: true,
 
   // Set the production url of your site here
-  url: 'https://topaz-gitadmin.github.io/Manual/',
+  url: 'https://topaz-gitadmin.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/Manual/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -107,8 +109,8 @@ const config = {
         copyright: `© ${new Date().getFullYear()} Fusion5, Site built with Docusaurus`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github, //lightCodeTheme,
+        darkTheme: prismThemes.dracula, //darkCodeTheme,
       },
     }),
 };
