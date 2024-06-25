@@ -1,0 +1,310 @@
+{
+    "name": "Fusion5 ruleset",
+    "rules": [
+        {
+            "id": "AA0072",
+            "action": "Warning",
+            "justification": "Set as warning: To improve readability the name of variables and parameters must be suffixed with the type or object name."
+        },
+        {
+            "id": "AS0081",
+            "action": "None",
+            "justification": "Disable: The InternalsVisibleTo setting will expose your internal objects to any extension..."
+        },
+        {
+            "id": "PTE0001",
+            "action": "None",
+            "justification": "Disable: Object ID must be in free range."
+        },
+        {
+            "id": "PTE0002",
+            "action": "None",
+            "justification": "Disable: Field ID must be in free range."
+        },
+        {
+            "id": "PTE0012",
+            "action": "None",
+            "justification": "Disable: The InternalsVisibleTo setting will expose your internal objects to any extension..."
+        },
+        {
+            "id": "LC0001",
+            "action": "None",
+            "justification": "Disable: In recent versions flowfields are not editable by default."
+        },
+        {
+            "id": "LC0002",
+            "action": "Warning",
+            "justification": "Set as warning: Commit() needs a comment to justify its existence. Either a leading or a trailing comment"
+        },
+        {
+            "id": "LC0003",
+            "action": "Warning",
+            "justification": "Set as warning: Do not use an Object ID for properties or variables declaration."
+        },
+        {
+            "id": "LC0004",
+            "action": "Warning",
+            "justification": "Set as warning: Property LookupPageID and DrilldownPageID must be filled in table because it is used in list page."
+        },
+        {
+            "id": "LC0005",
+            "action": "Warning",
+            "justification": "Set as warning: Wrong casing detected."
+        },
+        {
+            "id": "LC0006",
+            "action": "Error",
+            "justification": "Set as error: Set as warning: AutoIncrement fields are not possible in temporary tables."
+        },
+        {
+            "id": "LC0007",
+            "action": "None",
+            "justification": "Disable: DataPerCompany is missing."
+        },
+        {
+            "id": "LC0008",
+            "action": "Error",
+            "justification": "Set as error: Filter operators should not be used in SetRange. Use SetFilter instead."
+        },
+        {
+            "id": "LC0009",
+            "action": "None",
+            "justification": "Disable: Cyclomatic complexity and Maintainability index (within the limits)."
+        },
+        {
+            "id": "LC0010",
+            "action": "Warning",
+            "justification": "Set as warning: Cyclomatic complexity and Maintainability index (over the limits)."
+        },
+        {
+            "id": "LC0011",
+            "action": "None",
+            "justification": "Disable: Access property is missing."
+        },
+        {
+            "id": "LC0012",
+            "action": "Warning",
+            "justification": "Set as warning: Wrong Parameter detected."
+        },
+        {
+            "id": "LC0013",
+            "action": "Error",
+            "justification": "Set as error: NotBlank should be set explicitly for tables with a single-field primary key.."
+        },
+        {
+            "id": "LC0014",
+            "action": "Warning",
+            "justification": "Set as warning: The Caption of permissionset objects should not exceed the maximum length."
+        },
+        {
+            "id": "LC0015",
+            "action": "None",
+            "justification": "We are using only TableData permissions."
+        },
+        {
+            "id": "LC0016",
+            "action": "Warning",
+            "justification": "Set as warning: Caption is missing."
+        },
+        {
+            "id": "LC0017",
+            "action": "Error",
+            "justification": "Set as error: Writing to a FlowField is not common. Add a comment to explain this."
+        },
+        {
+            "id": "LC0018",
+            "action": "Warning",
+            "justification": "Set as warning: Events in internal codeunits are not accessible to extensions and should therefore be avoided."
+        },
+        {
+            "id": "LC0019",
+            "action": "Warning",
+            "justification": "Set as warning: Data Classification is equal to the Table. Remove to reduce redundancy."
+        },
+        {
+            "id": "LC0020",
+            "action": "Warning",
+            "justification": "Set as warning: Application Area is equal to the Page. Remove to reduce redundancy."
+        },
+        {
+            "id": "LC0021",
+            "action": "Warning",
+            "justification": "Set as warning: Confirm() must be implemented through the 'Confirm Management' codeunit from the System Application."
+        },
+        {
+            "id": "LC0022",
+            "action": "Warning",
+            "justification": "Set as warning: GlobalLanguage() must be implemented through the 'Translation Helper' codeunit from the Base Application."
+        },
+        {
+            "id": "LC0023",
+            "action": "Warning",
+            "justification": "Set as warning: Fieldgroup '{0}' is missing on table '{1}'."
+        },
+        {
+            "id": "LC0024",
+            "action": "None",
+            "justification": "We do not use semicolon at the end of the procedure definition."
+        },
+        {
+            "id": "LC0025",
+            "action": "None",
+            "justification": "Disable: Procedure must be either local, internal or define a documentation comment."
+        },
+        {
+            "id": "LC0026",
+            "action": "Warning",
+            "justification": "Set as warning: ToolTip must end with a dot."
+        },
+        {
+            "id": "LC0027",
+            "action": "Warning",
+            "justification": "Set as warning: Utilize the 'Page Management' codeunit for launching page."
+        },
+        {
+            "id": "LC0028",
+            "action": "Warning",
+            "justification": "Set as warning: Event subscriber arguments now use identifier syntax instead of string literals."
+        },
+        {
+            "id": "LC0029",
+            "action": "Warning",
+            "justification": "Set as warning: Use CompareDateTime method in Type Helper codeunit for DateTime variable comparisons."
+        },
+        {
+            "id": "LC0030",
+            "action": "Warning",
+            "justification": "Set as warning: Set Access property to Internal for Install/Upgrade codeunits."
+        },
+        {
+            "id": "LC0031",
+            "action": "Error",
+            "justification": "Set as error: Set ReadIsolation property instead of LockTable method.."
+        },
+        {
+            "id": "LC0032",
+            "action": "Warning",
+            "justification": "Set as warning: Clear(All) does not affect or change values for global variables in '{0}: Codeunit {1}'."
+        },
+        {
+            "id": "LC0033",
+            "action": "None",
+            "justification": "Disable (we want to leave app compatible with previous versions as long as possible): The specified runtime version in app.json is falling behind. The project targets {0} version {1} and the current runtime is {2}. Update the runtime to {3} for compatibility with the latest runtime features."
+        },
+        {
+            "id": "LC0034",
+            "action": "None",
+            "justification": "Disable: The property Extensible should be explicitly set for {0} objects."
+        },
+        {
+            "id": "LC0035",
+            "action": "Warning",
+            "justification": "Set as warning: Explicitly set AllowInCustomizations for fields omitted on pages."
+        },
+        {
+            "id": "LC0036",
+            "action": "Warning",
+            "justification": "Set as warning: ToolTip must start with the verb 'Specifies'."
+        },
+        {
+            "id": "LC0037",
+            "action": "Warning",
+            "justification": "Set as warning: Do not use line breaks in ToolTip."
+        },
+        {
+            "id": "LC0038",
+            "action": "None",
+            "justification": "If we have longer tooltip, it has reason."
+        },
+        {
+            "id": "LC0039",
+            "action": "Error",
+            "justification": "Set as error: Argument {0}: cannot convert from {1} to {2}."
+        },
+        {
+            "id": "LC0040",
+            "action": "Warning",
+            "justification": "Set as warning: Explicitly set the RunTrigger parameter on build-in methods."
+        },
+        {
+            "id": "LC0041",
+            "action": "Warning",
+            "justification": "Set as warning: Empty captions should be locked."
+        },
+        {
+            "id": "LC0042",
+            "action": "Error",
+            "justification": "Set as error: The SetAutoCalcFields method should only be used with FlowFields or fields of type Blob. The field {0} is not a FlowField or of type Blob."
+        },
+        {
+            "id": "LC0043",
+            "action": "Warning",
+            "justification": "Set as warning: Use SecretText type to protect credentials and sensitive textual values from being revealed."
+        },
+        {
+            "id": "LC0044",
+            "action": "Warning",
+            "justification": "Set as warning: Records '{0}' and '{1}' have conflicting fields with the same ID."
+        },
+        {
+            "id": "LC0045",
+            "action": "None",
+            "justification": "Disable: We know that 0 enum value should be used for blank value. If we have different value, it is by design."
+        },
+        {
+            "id": "LC0046",
+            "action": "Warning",
+            "justification": "Set as warning: Label with suffix Tok must be locked."
+        },
+        {
+            "id": "LC0047",
+            "action": "Warning",
+            "justification": "Set as warning: Locked Label must have a suffix Tok."
+        },
+        {
+            "id": "LC0048",
+            "action": "Warning",
+            "justification": "Set as warning: Use Error with a ErrorInfo or Label variable to improve telemetry details."
+        },
+        {
+            "id": "LC0049",
+            "action": "Warning",
+            "justification": "Set as warning: SourceTable property not defined on {0} '{1}'."
+        },
+        {
+            "id": "LC0050",
+            "action": "Warning",
+            "justification": "Set as warning: Found operator '{0}' together with placeholder '{1}' in filter expression, which results in unexpected behavior. Use the StrSubstNo() method to circumvent this.."
+        },
+        {
+            "id": "LC0051",
+            "action": "Warning",
+            "justification": "Set as warning: Do not assign a text to a target with smaller size."
+        },
+        {
+            "id": "LC0052",
+            "action": "Warning",
+            "justification": "Set as warning: The internal method is declared but never used."
+        },
+        {
+            "id": "LC0053",
+            "action": "None",
+            "justification": "Disable: The internal method is only used in the object in which it is declared."
+        },
+        {
+            "id": "LC0055",
+            "action": "Warning",
+            "justification": "Set as warning: The suffix 'Tok' is meant to be used when the value of the label matches the name."
+        },
+        {
+            "id": "LC0056",
+            "action": "Error",
+            "justification": "Set as error: Empty Enum values should not have a specified Caption property."
+        },
+        {
+            "id": "LC0057",
+            "action": "Error",
+            "justification": "Set as error: Enum values must have non-empty a Caption to be selectable in the client."
+        }
+    ]
+}
