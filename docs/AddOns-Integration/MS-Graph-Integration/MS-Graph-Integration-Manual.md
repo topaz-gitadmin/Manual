@@ -1,22 +1,10 @@
-<br/>
-<div style="page-break-after: always; width:100%; background-color: #EBEBEB;">
-<br/>
-<span style="margin-left: 1cm; font-size: 30px;">User Manual</span>
-<br/>
-<sup style="margin-left: 1.5cm; color:#FD7B23;">________________</sup>
-<br/>
-<span style="margin-left: 2cm;">MS Graph Online Drive Integration for Business Central</span>
-<br/>
-<br/>
-<br/>
-</div>
-<div style="page-break-after: always;"></div>
+# MS Graph Online Drive Integration for Business Central
 
-# <span style="color:#FD7B23">Overview</span>
+## Overview
 
 Allow you to access SharePoint drives via the Microsoft Graph API.
 
-## <span style="color:#FD7B23">Setup an OAuth2.0 Application</span>
+### Setup an OAuth2.0 Application
 
 Search for _OAuth 2.0 Application_
 ![OAuth 2.0 App](img/Setup1-b41fc74b-9436-49e8-b479-b3e062913686.PNG)
@@ -29,7 +17,7 @@ It is recommended to _Use BC OAuth 2.0_ when using _Authorization Code_ authenti
 
 Under _Authentication Interaction_ you can define if a consent is requested, should that be required on initial runs. 
 
-## <span style="color:#FD7B23">Setup the Online Drive</span>
+### Setup the Online Drive
 
 Online Drives Setups allow for automatic importing and processing of folders.
 You can navigate to files through Sites, Shared Drives and Groups.
@@ -62,7 +50,7 @@ __Advanced Settings (Show More)__
  - Select _Find recent Drives_ to include recently used drives for the current authenticated user. This allows selecting drives that are otherwise hard to navigate to due to access right limitations.
  - Set a _Search Filter_ to limit the displayed Sites
 
-## <span style="color:#FD7B23">Setup On Job Queue</span>
+### Setup On Job Queue
 
 ![Job Queue](img/Setup7-4daddd1c-83da-4405-a6d7-df243781c72f.PNG)
 Run Codeunit 80392 __FS5 Online Drive API__ specify the __Online Drive Setup__ through the _Parameter String_.
@@ -74,7 +62,7 @@ A Authorization Code for the OAuth 2.0 App has to be acquired before the first J
 You can use the Page Action _Enqueue_ to create a job Queue Entry stub
 ![Job Queue](img/Setup9-12bc062f-42f4-4363-a36b-696337ad90ed.PNG)
 
-## <span style="color:#FD7B23">Error Handling</span>
+### Error Handling
 
 Files with issues are copied into the Error Directory. 
 Additionally a notification is generated for the particular files issue:

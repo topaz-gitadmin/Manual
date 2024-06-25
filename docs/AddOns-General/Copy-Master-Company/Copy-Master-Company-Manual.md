@@ -1,22 +1,10 @@
-<br/>
-<div style="page-break-after: always; width:100%; background-color: #EBEBEB;">
-<br/>
-<span style="margin-left: 1cm; font-size: 30px;">User Manual</span>
-<br/>
-<sup style="margin-left: 1.5cm; color:#FD7B23;">________________</sup>
-<br/>
-<span style="margin-left: 2cm;">Copy Master Company for Business Central</span>
-<br/>
-<br/>
-<br/>
-</div>
-<div style="page-break-after: always;"></div>
+# Copy Master Company for Business Central
 
-# <span style="color:#FD7B23">Overview</span>
+## Overview
 
 Synchronize master data tables from a master company to other companies within the same environment.
 
-# <span style="color:#FD7B23">Setup</span>
+## Setup
 
 The Master Company is flagged as such in the __Company Information__ (Copy Comp. Config. Master) with a “Sync. Delay” to allow some room for undo etc.
 Companies to be updated are flagged as well (Update from Copy Comp. Config. Master).
@@ -30,7 +18,7 @@ You can unsubscribe specific Master tables at a Child company.
 
 For copied fields default replacement vales can be defined
 
-# <span style="color:#FD7B23">Processing Flow</span>
+## Processing Flow
 
 If a new Record is Inserted, Modified or Deleted a Copy Company Action is created.
 ![Copy Company Actions](img/actions.01-92e0c324-84f1-4741-b329-0f1f26159d4c.PNG)
