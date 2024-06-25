@@ -1,6 +1,6 @@
-# Fusion5 Topaz Core
+# Fusion5 Advanced Email
 
-Core Extension for Emailling with Logs; Batch Emailing of Reports and Integrations between Fusion5 Extensions.
+Fusion5 Extension for Emailling with Logs; Batch Emailing of Reports and Integrations between Fusion5 Extensions.
 
  - Different email addresses can be set for each document type. This can be done directly from each customer/vendor card.
  - Report Options can be set up for the Batch emailing of each document type. It is strongly recommended to set these up for every record (no filters need to be selected).
