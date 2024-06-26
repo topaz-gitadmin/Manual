@@ -1,6 +1,12 @@
-<h1> One-Time Vendors for Business Central </h1>
+---
+title: Manual
+sidebar_position: 1
+sidebar_class_name: 'nav-det-level'
+---
 
-# Overview
+# <span className="fusion5-text">One Time Vendor</span>
+
+## Overview
 
 Create a One-Time Vendors for use in one-off purchases to avoid setting up Vendors that are only used once.
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 sidebar_class_name: 'nav-det-level'
 ---
 
-# <span className="fusion5-text">Manual</span>
+# <span className="fusion5-text">Bank File Transfer</span>
 
 ## Overview
 

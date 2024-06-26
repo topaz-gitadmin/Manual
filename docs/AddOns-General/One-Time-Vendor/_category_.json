@@ -1,0 +1,8 @@
+{
+    "label": "One Time Vendor",
+    "position": 1,
+    "link": {
+      "type": "generated-index"
+    },
+    "className": "nav-ext-level"  
+  }
