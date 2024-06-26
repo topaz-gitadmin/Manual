@@ -1,4 +1,4 @@
-# Copy Master Company for Business Central
+# Manual Copy Master Company
 
 ## Overview
 

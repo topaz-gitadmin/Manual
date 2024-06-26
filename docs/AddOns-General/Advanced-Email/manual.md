@@ -1,4 +1,4 @@
-# Fusion5 Advanced Email
+# Manual Advanced Email
 
 Fusion5 Extension for Emailling with Logs; Batch Emailing of Reports and Integrations between Fusion5 Extensions.
 

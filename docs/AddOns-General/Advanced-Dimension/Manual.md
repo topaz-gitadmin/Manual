@@ -1,4 +1,4 @@
-# Fusion5 Advanced Dimensions
+# Manual Advanced Dimensions
 
 Advanced Dimension Management for BC
 
