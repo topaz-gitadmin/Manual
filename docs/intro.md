@@ -11,7 +11,7 @@ sidebar_class_name: 'nav-top-level'
 
 Welcome to the user documentation web page for Fusion5 extensions for Microsoft Dynamics 365 Business Central. Here you will find all the information you need to install, configure and use our extensions to enhance your business processes and workflows.
 
-Our extensions are designed to work seamlessly with Microsoft Dynamics 365 Business Central, a cloud-based business management solution that helps you connect your financials, sales, service, and operations. You can find our extensions [listed in Microsoft App Source, the official marketplace for Microsoft solutions](https://appsource.microsoft.com/en-us/marketplace/apps?search=fusion5&page=1&product=dynamics-365-business-central).
+Our extensions are designed to work seamlessly with Microsoft Dynamics 365 Business Central, a cloud-based business management solution that helps you connect your financials, sales, service, and operations. You can find some of our extensions [listed in Microsoft App Source, the official marketplace for Microsoft solutions](https://appsource.microsoft.com/en-us/marketplace/apps?search=fusion5&page=1&product=dynamics-365-business-central).
 
 ### Available Extensions
 
@@ -21,8 +21,8 @@ We offer a range of extensions that cover various aspects of business operations
 
 For each extension, you will find the following sections:
 
+- **Manual**: This section describes the main features and benefits of each extension, and how they can help you improve your business performance and efficiency. You will also find screenshots and videos that illustrate how the extension works in practice.
 - **Pricing**: This section explains the pricing model and the licensing options for each extension. Most of our extensions are available as monthly or annual subscriptions, depending on your needs and budget. However, some of our extensions have a one-time price that gives you lifetime access to the extension.
-- **Functionality**: This section describes the main features and benefits of each extension, and how they can help you improve your business performance and efficiency. You will also find screenshots and videos that illustrate how the extension works in practice.
 - **Change Log**: This section lists the updates and improvements that we have made to each extension over time. You can see the version history, the release date, and the changes that were implemented in each version.
 
 ### Licensing and Testing

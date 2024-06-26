@@ -1,4 +1,12 @@
-# Manual Advanced Email
+---
+title: Manual
+sidebar_position: 1
+sidebar_class_name: 'nav-det-level'
+---
+
+# <span className="fusion5-text">Manual</span>
+
+## Overview
 
 Fusion5 Extension for Emailling with Logs; Batch Emailing of Reports and Integrations between Fusion5 Extensions.
 
@@ -8,7 +16,7 @@ Fusion5 Extension for Emailling with Logs; Batch Emailing of Reports and Integra
 
 It is possible to create default setting from the List Page.
 
-![Report Parameters Setup](Parameters.0.PNG)
+![Report Parameters Setup](img/Parameters.0.PNG)
 
 ## Report Parameter Settings 
 
@@ -28,7 +36,7 @@ If no non empty email address can be found no Email will be send.
 
 Use "Test Mode" to exclusively send to the Email Address defined one the "Report Parameter" no "Report Emails", CC or BCC will be considered.
 
-![Report Parameters Setup](Parameters.1.PNG)
+![Report Parameters Setup](img/Parameters.1.PNG)
 
 ### for Batch Emailing
 
@@ -57,11 +65,11 @@ The Report settings are picked up from the normal Document Emailing actions.
 
 Saved Report Options filters will usually not be applied for Documents. __However__ you might need to setup empty Request Options to allow for Presetting of filters if used.
 
-![Report Parameters Setup](Parameters.3.PNG)
+![Report Parameters Setup](img/Parameters.3.PNG)
 
 A Dialog for details will be shown before sending
 
-![Report Parameters Setup](Parameters.4.PNG)
+![Report Parameters Setup](img/Parameters.4.PNG)
 
 When Emailing a Statement from the Customer PageAction a Request Page dialog will be run first before the Email Dialog.
 
@@ -88,7 +96,7 @@ For example:
 
 ## Report Parameter Page Actions
 
-![Process Actions](Actions.1.PNG)
+![Process Actions](img/Actions.1.PNG)
 
  - __Process > Set Options__ opens the Reports Request page to define filters; filters on the underlying Table will limit the Batch run.
 
@@ -96,11 +104,11 @@ For example:
 
  - __Process > Preview__ Preview the Report Attachment with a Request Page based on your stored filters.
 
-![Navigate Actions](Actions.2.PNG)
+![Navigate Actions](img/Actions.2.PNG)
 
  - __Navigate > Email Log__ Log of Emails send for this Report
 
-![Setup Actions](Actions.3.PNG)
+![Setup Actions](img/Actions.3.PNG)
 
  - __Setup > Email Addresses__ Specify Email for Base tables record ids used in Batch and Document mailing
 
@@ -108,7 +116,7 @@ For example:
 
  - __Setup > Load Add. Attachment__ Runs a filter Report to select a set of Recipients (Batch Records) and opens a Dialog to upload an Add. Attachment file shared across all Recipients selected.
 
-![Filter Report Add. Attachments](AddAttach.1.PNG)
+![Filter Report Add. Attachments](img/AddAttach.1.PNG)
 
  - __Setup > Clear Add. Attachment__ Removes the Additional Attachment from the Recipient (Batch Records) selected in the filter Report.
 
@@ -116,11 +124,11 @@ For example:
 
 Specific Email Addresses CC and BCC associated with a Batch Table Record. 
 
-![Batch Email Addresses](Parameters.2.PNG)
+![Batch Email Addresses](img/Parameters.2.PNG)
 
 You can upload and clear Add. Attachments here as well for selected sets of Email Addresses. A good way to clear a specific Add. Attachment can be to filter the "Additional Attachment" field, select all records and clear the Add. Attachment.
 
-![Email Addresses Add. Attachments](EmailAddr.1.PNG)
+![Email Addresses Add. Attachments](img/EmailAddr.1.PNG)
 
 ## Job Queue Setup
 
@@ -137,7 +145,7 @@ Logs Emails send via the Topaz Extensions with Error logging and resending optio
 
 Navigate from report parameter card > Email Log for each report or access directly from search.
 
-![Email Log](Email.1.PNG)
+![Email Log](img/Email.1.PNG)
 
 Use "Resend E-Mail" to create a new Email Log entry with the option to adjust E-Mail Address and content details before resending.
 
@@ -147,11 +155,11 @@ You can delete errornous Email Logs manually as these have not resulted in a sen
 
 From the "PDF Preview" FactBox you can open a a larger view of the PDF document.
 
-![PDF Preview](Preview.1.PNG)
+![PDF Preview](img/Preview.1.PNG)
 
 You can use __Actions > Download Attachment__ and __Actions > Download Add. Attachment__ to download the attached files.
 
-![Email Log](Email.1.PNG)
+![Email Log](img/Email.1.PNG)
 
 ### Email Log Error Notifications
 
@@ -159,11 +167,11 @@ You can enable Notifications for unsuccesfully send Emails that have __not__ bee
 By Default this is disabled but can be activated under __My Notifications__ for every user.
 Please be aware that this will include Reports run through Batch Processing that did not generate any output.
 
-![My Notifications](Email.2.PNG)
+![My Notifications](img/Email.2.PNG)
 
 The Notifications will show up on your Role Center Page.
 
-![Role Center Notifications](Email.3.PNG)
+![Role Center Notifications](img/Email.3.PNG)
 
 ## Email Sending Setup
 
@@ -200,7 +208,7 @@ This way the _Email Account_ associated with your emailing scenario will be used
 
 If you select a specific Account using the Assist function on the __Sender Email Name__ you can select a Account for this report that superceeds the __Email Scenario__ selected.
 
-![Sender Account selection](Parameters.5.PNG)
+![Sender Account selection](img/Parameters.5.PNG)
 
 ## Topaz Report Templates
 
@@ -218,14 +226,14 @@ Standard Template Reports for NZ Customers included:
 
 When enabling the "Topaz Administration" Appliocation Area you get access to Data Redaction Functionality for SUPER user.
 
-![Role Center Notifications](redact.1.PNG)
+![Role Center Notifications](img/redact.1.PNG)
 
 To enable this create a Configuration package for the Table 9178 "Application Area Setup" and set the corresponding flag for your relevant company.
 If no entry exists copy the CRONUS.
 
 You have the following functions from the "Topaz Report Parameter" list:
 
-![Data Redaction](redact.2.PNG)
+![Data Redaction](img/redact.2.PNG)
 
 to replace email addresses and empty file path. This is not available in Saas Production environments for safety reasons.
 

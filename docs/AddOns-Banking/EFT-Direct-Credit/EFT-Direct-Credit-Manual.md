@@ -1,7 +1,12 @@
-# Manual EFT Direct Credit
+---
+title: Manual
+sidebar_position: 1
+sidebar_class_name: 'nav-det-level'
+---
 
-Overview
-========
+# <span className="fusion5-text">Manual</span>
+
+## Overview
 
 The Electronic Funds Transfer (EFT) module allows purchase and payments
 journals to be output in an electronic format.

@@ -1,8 +1,12 @@
-Manual for Import from Microsoft Excel
-======================================
+---
+title: Manual
+sidebar_position: 1
+sidebar_class_name: 'nav-det-level'
+---
 
-Overview
-========
+# <span className="fusion5-text">Manual</span>
+
+## Overview
 
 This Journal Import utility allows users to import the following
 Dynamics BC records from Microsoft Excel.

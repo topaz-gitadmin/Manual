@@ -1,0 +1,8 @@
+{
+    "label": "Microsoft Graph Integration",
+    "position": 1,
+    "link": {
+      "type": "generated-index"
+    },
+    "className": "nav-ext-level"  
+  }

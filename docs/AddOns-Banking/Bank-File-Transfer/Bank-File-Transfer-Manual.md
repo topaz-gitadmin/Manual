@@ -1,4 +1,12 @@
-# Manual Bank File Transfer
+---
+title: Manual
+sidebar_position: 1
+sidebar_class_name: 'nav-det-level'
+---
+
+# <span className="fusion5-text">Manual</span>
+
+## Overview
 
 Transfer files to NZ Banks directly through an Azure Function connecting to the Banks SFtp and PGP file encryption. 
 

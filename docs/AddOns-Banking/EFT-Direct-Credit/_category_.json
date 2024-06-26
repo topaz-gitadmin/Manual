@@ -1,0 +1,8 @@
+{
+    "label": "EFT (Direct Credit)",
+    "position": 1,
+    "link": {
+      "type": "generated-index"
+    },
+    "className": "nav-ext-level"  
+  }
