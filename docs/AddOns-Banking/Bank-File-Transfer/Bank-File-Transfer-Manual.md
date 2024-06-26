@@ -1,4 +1,4 @@
-# Manual Bank File Transfer for Business Central
+# Manual Bank File Transfer
 
 Transfer files to NZ Banks directly through an Azure Function connecting to the Banks SFtp and PGP file encryption. 
 

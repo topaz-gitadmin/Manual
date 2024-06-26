@@ -1,0 +1,9 @@
+{
+  "label": "AddOns: Business Central Banking",
+  "position": 55,
+  "link": {
+    "type": "generated-index",
+    "description": "Banking Files for Business Central."
+  },
+  "className": "nav-top-level"
+}
