@@ -8,9 +8,7 @@ sidebar_class_name: 'nav-det-level'
 
 # <span className="fusion5-text">Landed Cost</span>
 
-[[_TOC_]]
-
-# Introduction
+## Introduction
 
 The purpose of the Landed Cost extension is to allow item charges
 relating to purchased items to be captured (from a purchase invoice) and
@@ -51,9 +49,9 @@ document be deleted.
 Landed Costs, allocated to an item, can be seen as value entries on the
 Item Ledger Entries.
 
-# Set Up
+## Set Up
 
-## Landed Cost Setup Card
+### Landed Cost Setup Card
 
 There is some basic setup required to use this extension. Firstly, go to
 the Landed Cost Setup Card.
@@ -92,7 +90,7 @@ the Landed Cost Setup Card.
         asked what they would like to do (leave or delete) the existing
         lines on the purchase invoice.
 
-## Item Charges Card
+### Item Charges Card
 
 Next you will need to either set up some Item Charges or add additional
 information onto existing entries. In the Item Charges card, you can
@@ -143,7 +141,7 @@ For each of the item charges:
     the vendor or G/L Account selected in the LC Default Account No.
     field.
 
-# Landed Cost List
+## Landed Cost List
 
 The Landed Cost cards can be accessed via the Landed Cost list (note -
 the list is not editable).
@@ -154,7 +152,7 @@ By default, this will only show Landed Cost documents with a costing
 status of 'Open'. However, you can remove filters on this page to see
 all Landed Cost documents.
 
-# Landed Cost Card
+## Landed Cost Card
 
 To create a Landed Cost card, you can either create one manually or
 create one from a purchase order. You can add more purchase order
@@ -186,7 +184,7 @@ editing the purchase order.
 
 There are four FastTabs on this page.
 
-## General (_FastTab_)
+### General (_FastTab_)
 
 ![](.img/N02.image8.png)
 
@@ -212,7 +210,7 @@ A 'Closed' status means that no fields on the page can be editable.
 
 
 
-## Shipping (_FastTab_)
+### Shipping (_FastTab_)
 
 ![](.img/N02.image9.png)
 
@@ -221,7 +219,7 @@ Landed Cost document.
 
 
 
-## Landed Cost Invoicing (_FastTab_)
+### Landed Cost Invoicing (_FastTab_)
 
 ![](.img/N02.image10.png)
 
@@ -367,7 +365,7 @@ to the Landed Cost Setup rules.
 
 
 
-## PO Line (_FastTab_)
+### PO Line (_FastTab_)
 
 ![](.img/N02.image13.png)
 
@@ -409,7 +407,7 @@ to the Landed Cost Setup rules.
 
     
 
-## Landed Cost Card (_Actions_)
+### Landed Cost Card (_Actions_)
 
 If you wish to create the Landed Cost card manually, there are two
 actions on the ribbon that can help you.
@@ -446,7 +444,7 @@ From the ribbon select Print.
 
 ![](.img/N02.image18.png)
 
-# Item Ledger Entries
+## Item Ledger Entries
 
 You can view the assigned Landed Costs against an item by going to Item
 Ledger Entries.
