@@ -4,8 +4,6 @@ sidebar_position: 1
 sidebar_class_name: 'nav-det-level'
 ---
 
-[[_TOC_]]
-
 # <span className="fusion5-text">Imports from Excel</span>
 
 ## **Overview Import from Excel functions**
