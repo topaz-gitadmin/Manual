@@ -4,6 +4,8 @@ sidebar_position: 1
 sidebar_class_name: 'nav-det-level'
 ---
 
+[[_TOC_]]
+
 # <span className="fusion5-text">Imports from Excel</span>
 
 ## **Overview Import from Excel functions**
@@ -239,20 +241,20 @@ Static Data imports use a specified format and are designed for importing substa
 
 You can find these Static Imports by searching for "Import from Excel". 
 
+1. __Import G/L Journal from Excel:__ Allows users to import General Ledger journal entries, including account codes, descriptions, posting dates and amounts from an Excel file.
 1. __Import Item from Excel:__ Allows users to import item data, including item codes, descriptions, prices, and other details, directly from an Excel file into the system.
- 1. __Import Resources from Excel:__ Facilitates the import of resource information such as resource names, types, costs, and availability from an Excel spreadsheet.
- 1. __Import Vendors from Excel:__ Enables the import of vendor details, including vendor names, contact information, payment terms, and addresses, from an Excel file.
- 1. __Import Customers from Excel:__ Allows users to import customer data, including customer names, contact details, billing addresses, and credit limits, from an Excel file.
- 1. __Import FA Journal from Excel:__ Facilitates the import of Fixed Assets journal entries, including asset codes, descriptions, acquisition dates, and values, from an Excel spreadsheet.
- 1. __Import Job/Tasks from Excel:__ Enables the import of job and task details, such as job codes, descriptions, start and end dates, and assigned resources, from an Excel file.
- 1. __Import Fixed Assets from Excel:__ Allows users to import fixed asset information, including asset codes, descriptions, acquisition costs, and depreciation details, from an Excel file.
- 1. __Import Job Journal from Excel:__ Facilitates the import of job journal entries, including job codes, descriptions, costs, and revenues, from an Excel spreadsheet.
- 1. __Import Item Journal from Excel:__ Enables the import of item journal entries, including item codes, descriptions, quantities, and values, from an Excel file.
- 1. __Import G/L Journal from Excel:__ Allows users to import General Ledger journal entries, including account codes, descriptions, debit and credit amounts, from an Excel file.
- 1. __Import Job Budgets from Excel:__ Facilitates the import of job budget details, including job codes, budgeted costs, and revenues, from an Excel spreadsheet.
- 1. __Import G/L Accounts from Excel:__ Enables the import of General Ledger account information, including account codes, descriptions, and account types, from an Excel file.
- 1. __Import Access Controls from Excel:__ Allows users to import access control settings, including user roles, permissions, and restrictions, from an Excel file.
- 1. __Import Dimension Values from Excel:__ Facilitates the import of dimension values, including dimension codes, descriptions, and related values, from an Excel spreadsheet.
+ 1. __Import Resources from Excel:__ Facilitates the import of resource information from an Excel spreadsheet.
+ 1. __Import Vendors from Excel:__ Enables the import of vendor details, including vendor names, addresses, payment terms, posting groups and other data from an Excel file.
+ 1. __Import Customers from Excel:__ Allows users to import customer data, including customer names, addresses, payment terms, posting groups and other data from an Excel file.
+ 1. __Import FA Journal from Excel:__ Facilitates the import of Fixed Assets journal entries, including asset codes, posting dates, and values from an Excel spreadsheet.
+ 1. __Import Job/Tasks from Excel:__ Enables the import of job and task details, such as job codes, job descriptions, job tasks, bill to customer, and start and end dates from an Excel file.
+ 1. __Import Fixed Assets from Excel:__ Allows users to import fixed asset information, including asset codes, descriptions and classification from an Excel file.
+ 1. __Import Job Journal from Excel:__ Facilitates the import of job journal entries, including job codes, posting date, quantity, cost and price from an Excel spreadsheet.
+ 1. __Import Item Journal from Excel:__ Enables the import of item journal entries, including item codes, descriptions, quantities, and values from an Excel file.
+ 1. __Import Job Budgets from Excel:__ Facilitates the import of job budget details, including job codes, budgeted costs, and revenues from an Excel spreadsheet.
+ 1. __Import G/L Accounts from Excel:__ Enables the import of General Ledger account information, including account codes, descriptions, and account types from an Excel file.
+ 1. __Import Access Controls from Excel:__ Allows users to import access control settings, including approval user, approval group and limit from an Excel file.
+ 1. __Import Dimension Values from Excel:__ Facilitates the import of dimension values, including dimension codes, dimension values and descriptions from an Excel spreadsheet.
 
 ### **Import G/L Journal from Excel**
 
