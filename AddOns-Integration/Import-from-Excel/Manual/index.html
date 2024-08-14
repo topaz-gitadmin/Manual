@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-AddOns-Integration/Import-from-Excel/Manual" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.4.0">
+<title data-rh="true">Manual | Business Central AddOns by Fusion5 Business Solutions</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://topaz-gitadmin.github.io/Manual/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://topaz-gitadmin.github.io/Manual/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://topaz-gitadmin.github.io/Manual/AddOns-Integration/Import-from-Excel/Manual/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Manual | Business Central AddOns by Fusion5 Business Solutions"><meta data-rh="true" name="description" content="[[TOC]]"><meta data-rh="true" property="og:description" content="[[TOC]]"><link data-rh="true" rel="icon" href="/Manual/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://topaz-gitadmin.github.io/Manual/AddOns-Integration/Import-from-Excel/Manual/"><link data-rh="true" rel="alternate" href="https://topaz-gitadmin.github.io/Manual/AddOns-Integration/Import-from-Excel/Manual/" hreflang="en"><link data-rh="true" rel="alternate" href="https://topaz-gitadmin.github.io/Manual/AddOns-Integration/Import-from-Excel/Manual/" hreflang="x-default"><link rel="stylesheet" href="/Manual/assets/css/styles.62a2facf.css">
+<script src="/Manual/assets/js/runtime~main.f357cfe2.js" defer="defer"></script>
+<script src="/Manual/assets/js/main.de079a73.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Manual/"><div class="navbar__logo"><img src="/Manual/img/logo.png" alt="Fusion5 Business Solutions" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/Manual/img/logo.png" alt="Fusion5 Business Solutions" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Business Central AddOns by Fusion5 Business Solutions</b></a></div><div class="navbar__items navbar__items--right"><a href="https://www.fusion5.com.au/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Fusion5 Australia<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a href="https://www.fusion5.co.nz/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Fusion5 New Zealand<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item nav-top-level"><a class="menu__link" href="/Manual/">Overview</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed nav-top-level"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Manual/category/addons-business-central-general/">AddOns: Business Central General</a><button aria-label="Expand sidebar category &#x27;AddOns: Business Central General&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed nav-top-level"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Manual/category/addons-business-central-banking/">AddOns: Business Central Banking</a><button aria-label="Expand sidebar category &#x27;AddOns: Business Central Banking&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item nav-top-level"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/Manual/category/addons-business-central-integrations/">AddOns: Business Central Integrations</a><button aria-label="Collapse sidebar category &#x27;AddOns: Business Central Integrations&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item nav-ext-level"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/Manual/category/imports-from-excel/">Imports from Excel</a><button aria-label="Collapse sidebar category &#x27;Imports from Excel&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item nav-det-level"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/">Manual</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item nav-det-level"><a class="menu__link" tabindex="0" href="/Manual/AddOns-Integration/Import-from-Excel/pricing/">Pricing</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed nav-ext-level"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/Manual/category/microsoft-graph-integration/">Microsoft Graph Integration</a><button aria-label="Expand sidebar category &#x27;Microsoft Graph Integration&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/Manual/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/Manual/category/addons-business-central-integrations/"><span itemprop="name">AddOns: Business Central Integrations</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/Manual/category/imports-from-excel/"><span itemprop="name">Imports from Excel</span></a><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Manual</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><p>[[<em>TOC</em>]]</p>
+<h1><span class="fusion5-text">Imports from Excel</span></h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview-import-from-excel-functions"><strong>Overview Import from Excel functions</strong><a class="hash-link" aria-label="Direct link to overview-import-from-excel-functions" title="Direct link to overview-import-from-excel-functions" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#overview-import-from-excel-functions">​</a></h2>
+<p>The Import from Excel extension enables the import of Microsoft Excel files of various formats to import Master Data, Sales Documents and Purchase Documents and Journals in Business Central.  This extension includes some static imports where the file format is pre-defined (this is available for master data, and general journals), and also dynamic imports where the user can create a template based on a required excel format (this is only available for journals and purchase/sales documents).</p>
+<p><strong>Dynamic Imports:</strong></p>
+<p>Users can create their own templates based on the file formats available to them from external systems, and define how the data should be managed as it is imported.  When creating Dynamic Import Templates, the function allows users to import the column definition from the excel file so they do not have to set it up manually, and then map the column data to all relevant fields in the document/journal in BC.  They can also set default values where the required information is not available in the file. Templates can be set up to:</p>
+<ul>
+<li>Import data to General Journals</li>
+<li>Create or update Purchase Invoices and Credit Memos</li>
+<li>Create of update Sales Invoices and Credit Memos</li>
+</ul>
+<p><strong>Static Imports:</strong></p>
+<p>Static Data imports use a specified format and are designed for importing substantial amounts of data into the tables listed below:</p>
+<ul>
+<li>Items, Resources, Vendors,  Customers, FA Journals, Jobs/Tasks, Fixed Assets, Job Journal, G/L Journal, Job Budgets, Access Controls, and Dimensions.</li>
+</ul>
+<p>NB: Shortcut dimensions have been included in the templates and can be imported within the static data imports.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dynamic-imports"><strong>Dynamic Imports</strong><a class="hash-link" aria-label="Direct link to dynamic-imports" title="Direct link to dynamic-imports" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#dynamic-imports">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="setting-up-dynamic-import-codes"><strong>Setting up Dynamic Import Codes</strong><a class="hash-link" aria-label="Direct link to setting-up-dynamic-import-codes" title="Direct link to setting-up-dynamic-import-codes" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#setting-up-dynamic-import-codes">​</a></h3>
+<p>Set up Dynamic Import Codes to create user definable formats to import data into Purchase and Sales Documents, and Journals.</p>
+<p>Go to <strong>Dynamic Import Codes</strong>. This is accessible from the following places:</p>
+<ul>
+<li>Search &gt; <strong>Dynamic Import Codes</strong></li>
+<li>From General Journal &gt; Process &gt; <strong>Dynamic Import Codes</strong></li>
+<li>From the Purchase Invoice list &gt; Process &gt; <strong>Dynamic Import Codes</strong></li>
+<li>From the Sales Invoice list &gt; Process &gt; <strong>Dynamic Import Codes</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Access Dynamic Import Codes.png" src="/Manual/assets/images/Access Dynamic Import Codes-860816bc-6693-43b9-b4b9-ace4a7f8c9a7-971881624b2ed96296b5713a9225eb23.png" width="883" height="273" class="img_ev3q"></p>
+<p>To create new dynamic import code enter the following information:</p>
+<ul>
+<li><strong>Journal Code</strong> - User definable code to define import layout</li>
+<li><strong>Import Type</strong> - Options to create General journal, Sales or Purchase Invoices</li>
+<li><strong>Description</strong> - User definable description to define import layout</li>
+<li><strong>Excel Row of First Data Line</strong> - Line Number for first journal line in excel where data to be imported starts</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Dynamic Import Codes.png" src="/Manual/assets/images/Dynamic Import Codes-00887158-498f-4dae-bc38-8a5e133364aa-b5dd2a2109f400f56d35037215cec126.png" width="765" height="305" class="img_ev3q"></p>
+<p>Select <strong>Import Columns from File</strong> to import an excel file to create required column layout, and map to corresponding journal fields:</p>
+<ul>
+<li><strong>Excel Column No</strong> – Column No from Excel or manually entered no. after the excel column numbers</li>
+<li><strong>Excel Content</strong> – Column heading from excel if Imported or blank for defaults</li>
+<li><strong>Journal Import Field Name</strong> – General Journal field.  This is a drop down list of all available files to allow the  user to create there own custom mapping.</li>
+<li><strong>Default Value</strong> – Default Value to include in integration if not provided by excel mapping</li>
+<li><strong>Transformation Rule</strong> – look up to the standard transformation rules and select relevant rule for the field (ie TITLECASE will capitalize the first letter of each word)</li>
+</ul>
+<p><strong>Sample Excel File Layout</strong></p>
+<p><img decoding="async" loading="lazy" alt="Sample File Layout.png" src="/Manual/assets/images/Sample File Layout-4f706de0-4564-448f-af9c-830f7b25e9a4-cdb07a527b4c0b17f65552cda753ee79.png" width="719" height="150" class="img_ev3q"></p>
+<p><strong>Dynamic Import Code Mapping</strong></p>
+<p><img decoding="async" loading="lazy" alt="Dynamic Import Code Columns.png" src="/Manual/assets/images/Dynamic Import Code Columns-81f56863-e18a-476e-ad47-965ec73f5636-faad17e3356d411dfc44c7290f4014f7.png" width="777" height="334" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="field-selection-for-dynamic-journal-template"><strong>Field Selection for Dynamic Journal Template</strong><a class="hash-link" aria-label="Direct link to field-selection-for-dynamic-journal-template" title="Direct link to field-selection-for-dynamic-journal-template" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#field-selection-for-dynamic-journal-template">​</a></h4>
+<p>When creating a <strong>Dynamic Import Code</strong> template to import General Journals the field selections are as follow:</p>
+<p><em><strong>Mandatory Fields for Journal</strong></em></p>
+<p>The following fields are Mandatory and must be included in the excel file or have a default value supplied.</p>
+<ul>
+<li><strong>Journal Template Name</strong> - Standard Dynamics BC template name to define type of journal</li>
+<li><strong>Journal Batch Name</strong> - Batch Name must already exist.</li>
+<li><strong>Posting Date</strong> - Journal Posting Date.</li>
+<li><strong>Account Type</strong> - Account Type for Journal Line.</li>
+<li><strong>Account No.</strong> - Number based on account type.</li>
+<li><strong>Amount</strong> - Value for Journal.</li>
+</ul>
+<p><em><strong>Optional Fields</strong></em></p>
+<p>All optional fields can be supplied in the import mapping or left to default in the same way as a manually entered journal.</p>
+<ul>
+<li><strong>Document No.</strong></li>
+<li><strong>Description</strong></li>
+<li><strong>Dimensions 1-8</strong> - Global and Shortcut dimensions can be included in template as separate columns based on the company dimension setup</li>
+<li><strong>Bal. Account Type</strong></li>
+<li><strong>Bal. Account No.</strong></li>
+<li><strong>Document Date</strong></li>
+<li><strong>Document Type</strong></li>
+<li><strong>External Document No.</strong></li>
+<li><strong>FA Posting Type</strong></li>
+<li><strong>Gen. Posting Type</strong></li>
+<li><strong>Gen. Prod. Posting Group</strong></li>
+<li><strong>Gen. Bus. Posting Group</strong></li>
+<li><strong>GST Bus. Posting Group</strong></li>
+<li><strong>GST Prod. Posting Group</strong></li>
+<li><strong>GST Amount</strong></li>
+<li><strong>Project Line Type</strong></li>
+<li><strong>Project No.</strong></li>
+<li><strong>Project Quantity</strong></li>
+<li><strong>Project Task No.</strong></li>
+<li><strong>Project Unit Cost</strong></li>
+<li><strong>Project Unit Price</strong></li>
+<li><strong>Recurring Frequency</strong></li>
+<li><strong>Recurring Method</strong></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="field-selection-for-dynamic-purchase-document-templates"><strong>Field Selection for Dynamic Purchase Document Templates</strong><a class="hash-link" aria-label="Direct link to field-selection-for-dynamic-purchase-document-templates" title="Direct link to field-selection-for-dynamic-purchase-document-templates" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#field-selection-for-dynamic-purchase-document-templates">​</a></h4>
+<p>When creating a <strong>Dynamic Import Code</strong> template to import Purchase Invoices and Credit Memos the field selections are as follow:</p>
+<p><strong><em>Mandatory Fields</em></strong> for Purchase Document (Hdr) is for Header fields and (Line) is for the lines:</p>
+<ul>
+<li><strong>Document No. (Hdr)</strong></li>
+<li><strong>Buy from Vendor No. (Hdr)</strong></li>
+<li><strong>Vendor Invoice No. (Hdr) or Vendor Credit Memo No. (Hdr)</strong></li>
+<li><strong>Posting Date (Hdr)</strong></li>
+<li><strong>Type (Line)</strong></li>
+<li><strong>No. (Line)</strong></li>
+<li><strong>Quantity (Line)</strong></li>
+<li><strong>Direct Unit Cost (Line)</strong></li>
+</ul>
+<p>NB: If Mandatory fields are not in the excel file, add additional lines below the excel fields; populate Excel column no, Journal Import Field name and Default Value (such as Account Type in screenshot above)</p>
+<p><em><strong>Optional Fields</strong></em></p>
+<ul>
+<li><strong>Dimensions 1-8 (Hdr)</strong></li>
+<li><strong>Due Date (Hdr)</strong></li>
+<li><strong>Buy-from Vendor Name (Hdr)</strong></li>
+<li><strong>Buy-from Address (Hdr)</strong></li>
+<li><strong>Buy-from Address 2 (Hdr)</strong></li>
+<li><strong>Buy-from Contact No. (Hdr)</strong></li>
+<li><strong>Buy-from Post Code (Hdr)</strong></li>
+<li><strong>Currency Code (Hdr)</strong></li>
+<li><strong>Document Date (Hdr)</strong></li>
+<li><strong>Pay-to Vendor No. (Hdr)</strong></li>
+<li><strong>Posting No. (Hdr)</strong> - If you require the posted invoice to have a specific posted document number</li>
+<li><strong>Description (Line)</strong></li>
+<li><strong>Description 2 (Line)</strong></li>
+<li><strong>Dimensions 1-8 (Line)</strong></li>
+<li><strong>Gen. Prod. Posting Group</strong></li>
+<li><strong>GST Prod. Posting Group</strong></li>
+<li><strong>Project No.</strong></li>
+<li><strong>Project Planning Line No.</strong></li>
+<li><strong>Project Task No.</strong></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="field-selection-for-dynamic-sales-document-templates"><strong>Field Selection for Dynamic Sales Document Templates</strong><a class="hash-link" aria-label="Direct link to field-selection-for-dynamic-sales-document-templates" title="Direct link to field-selection-for-dynamic-sales-document-templates" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#field-selection-for-dynamic-sales-document-templates">​</a></h4>
+<p>When creating a <strong>Dynamic Import Code</strong> template to import Sales Invoices and Credit Memos the field selections are as follow:</p>
+<p><strong><em>Mandatory Fields</em></strong> for Sales Document (Hdr) is for Header fields and (Line) is for the lines:</p>
+<ul>
+<li><strong>Sell-to Customer No. (Hdr)</strong></li>
+<li><strong>Document Date (Hdr)</strong></li>
+<li><strong>Document Type (Hdr)</strong></li>
+<li><strong>External Document No. (Hdr)</strong> - If mandatory in Sales &amp; Receivables setup</li>
+<li><strong>Posting Date (Hdr)</strong></li>
+<li><strong>Type (Line)</strong></li>
+<li><strong>No. (Line)</strong></li>
+<li><strong>Quantity (Line)</strong></li>
+<li><strong>Unit Price (Line)</strong></li>
+</ul>
+<p><em><strong>Optional Fields</strong></em></p>
+<ul>
+<li><strong>Bill-to Customer No. (Hdr)</strong></li>
+<li><strong>Dimensions 1-8 (Hdr)</strong></li>
+<li><strong>Document Date (Hdr)</strong></li>
+<li><strong>Due Date (Hdr)</strong></li>
+<li><strong>External Document No. (Hdr)</strong> - If not mandatory in Sales &amp; Receivables setup</li>
+<li><strong>Payment Discount % (Hdr)</strong></li>
+<li><strong>Payment Terms Code (Hdr)</strong></li>
+<li><strong>Posting No. (Hdr)</strong> - If you require the posted invoice to have a specific posted document number</li>
+<li><strong>Posting Description (Hdr)</strong></li>
+<li><strong>Salesperson Code (Hdr)</strong></li>
+<li><strong>Currency Code (Hdr)</strong></li>
+<li><strong>Sell-to Contact No. (Hdr)</strong></li>
+<li><strong>Description (Line)</strong></li>
+<li><strong>Description 2 (Line)</strong></li>
+<li><strong>Dimensions 1-8 (Line)</strong></li>
+<li><strong>Gen. Prod. Posting Group (Line)</strong></li>
+<li><strong>GST Prod. Posting Group (Line)</strong></li>
+<li><strong>Return Reason Code (Line)</strong></li>
+<li><strong>Work Type Code (Line)</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-documentsjournals-using-dynamic-import-codes"><strong>Import Documents/Journals using Dynamic Import Codes</strong><a class="hash-link" aria-label="Direct link to import-documentsjournals-using-dynamic-import-codes" title="Direct link to import-documentsjournals-using-dynamic-import-codes" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-documentsjournals-using-dynamic-import-codes">​</a></h3>
+<p>To import Journals and Documents using the Dynamic Import Codes; go to <strong>Import from Excel with Dynamic columns</strong>.  This is accessible from the following places:</p>
+<ul>
+<li>Search &gt; <strong>Import from Excel with Dynamic Columns</strong></li>
+<li>From General Journal &gt; Process &gt; <strong>Import from Excel with Dynamic Columns</strong></li>
+<li>From the Purchase Invoice list &gt; Process &gt; <strong>Import from Excel with Dynamic Columns</strong></li>
+<li>From the Sales Invoice list &gt; Process &gt; <strong>Import from Excel with Dynamic Columns</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import from Excel function.png" src="/Manual/assets/images/Import from Excel function-405986d5-0f47-468f-9515-d52caa045516-48bed5c6ad6dab9a129597546f875be3.png" width="885" height="269" class="img_ev3q"></p>
+<p>Enter required information on the request form:</p>
+<ul>
+<li><strong>Import Type</strong> - General Journal, Purchase Document, Sales Document</li>
+<li><strong>Import Code</strong> - Select the required import code as defined above</li>
+<li><strong>Override Posting Date</strong> – Populate with date to override the posting date, or leave blank to import date from file</li>
+<li><strong>Override Journal Template</strong> – Populate to override journal template in file (only relevant for journals)</li>
+<li><strong>Override Journal Batch</strong> - Populate to override journal batch in file (only relevant for journals)</li>
+<li><strong>Write Option</strong> – Select option:<!-- -->
+<ul>
+<li>Append to add to existing lines on journal batch, purchase invoice or sales invoice</li>
+<li>Overwrite to replace lines on journal batch, purchase invoice or sales invoice (NB: This is only possible on Purchase/Sales Documents if a Document No. is supplied in the dataset)</li>
+</ul>
+</li>
+<li><strong>Choose Excel File</strong> - This opens the standard Microsoft File selection utility. Navigate to the required file for import</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Dynamic Import Request Page.png" src="/Manual/assets/images/Dynamic Import Request Page-04e7ca76-3a14-4bf0-ad4d-72d7531da675-a3332cc3fe6998be10042c858e0d088b.png" width="675" height="708" class="img_ev3q"></p>
+<ul>
+<li>
+<p><strong>Workbook File Name</strong> - Filename to be imported</p>
+</li>
+<li>
+<p><strong>Worksheet Name</strong> - Work Sheet in file</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="journal-posting"><strong>Journal Posting</strong><a class="hash-link" aria-label="Direct link to journal-posting" title="Direct link to journal-posting" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#journal-posting">​</a></h3>
+<p>Navigate to the required Journal template/batch or navigate to the Sales Invoice or Purchase Invoice list page.</p>
+<p>Journal can be posted as per standard journal posting routines. Documents can be reviewed or posted.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="static-imports"><strong>Static Imports</strong><a class="hash-link" aria-label="Direct link to static-imports" title="Direct link to static-imports" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#static-imports">​</a></h2>
+<p>Static Data imports use a specified format and are designed for importing substantial amounts of data.</p>
+<p>You can find these Static Imports by searching for &quot;Import from Excel&quot;.</p>
+<ol>
+<li><strong>Import Item from Excel:</strong> Allows users to import item data, including item codes, descriptions, prices, and other details, directly from an Excel file into the system.</li>
+<li><strong>Import Resources from Excel:</strong> Facilitates the import of resource information such as resource names, types, costs, and availability from an Excel spreadsheet.</li>
+<li><strong>Import Vendors from Excel:</strong> Enables the import of vendor details, including vendor names, contact information, payment terms, and addresses, from an Excel file.</li>
+<li><strong>Import Customers from Excel:</strong> Allows users to import customer data, including customer names, contact details, billing addresses, and credit limits, from an Excel file.</li>
+<li><strong>Import FA Journal from Excel:</strong> Facilitates the import of Fixed Assets journal entries, including asset codes, descriptions, acquisition dates, and values, from an Excel spreadsheet.</li>
+<li><strong>Import Job/Tasks from Excel:</strong> Enables the import of job and task details, such as job codes, descriptions, start and end dates, and assigned resources, from an Excel file.</li>
+<li><strong>Import Fixed Assets from Excel:</strong> Allows users to import fixed asset information, including asset codes, descriptions, acquisition costs, and depreciation details, from an Excel file.</li>
+<li><strong>Import Job Journal from Excel:</strong> Facilitates the import of job journal entries, including job codes, descriptions, costs, and revenues, from an Excel spreadsheet.</li>
+<li><strong>Import Item Journal from Excel:</strong> Enables the import of item journal entries, including item codes, descriptions, quantities, and values, from an Excel file.</li>
+<li><strong>Import G/L Journal from Excel:</strong> Allows users to import General Ledger journal entries, including account codes, descriptions, debit and credit amounts, from an Excel file.</li>
+<li><strong>Import Job Budgets from Excel:</strong> Facilitates the import of job budget details, including job codes, budgeted costs, and revenues, from an Excel spreadsheet.</li>
+<li><strong>Import G/L Accounts from Excel:</strong> Enables the import of General Ledger account information, including account codes, descriptions, and account types, from an Excel file.</li>
+<li><strong>Import Access Controls from Excel:</strong> Allows users to import access control settings, including user roles, permissions, and restrictions, from an Excel file.</li>
+<li><strong>Import Dimension Values from Excel:</strong> Facilitates the import of dimension values, including dimension codes, descriptions, and related values, from an Excel spreadsheet.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-gl-journal-from-excel"><strong>Import G/L Journal from Excel</strong><a class="hash-link" aria-label="Direct link to import-gl-journal-from-excel" title="Direct link to import-gl-journal-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-gl-journal-from-excel">​</a></h3>
+<p>This function allows users to import G/L Journals from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Go to <strong>Import G/L Journal from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import Journal from Excel 2.png" src="/Manual/assets/images/Import Journal from Excel 2-293a16c1-6e6d-4f2d-a83e-894071f78864-53232d02c1ec828f5803facee9b99a2d.png" width="669" height="492" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the <strong>General Journal Batch</strong> as specified in your import template to review and post the journal</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="image6.png" src="/Manual/assets/images/image6-27421b85-8b1f-4386-b86e-ca4109f3ab81-493a53ee4cf078a315e72bf4c78c8ad2.png" width="1157" height="306" class="img_ev3q"></p>
+<ul>
+<li>Once reviewed, you can post the journal.</li>
+</ul>
+<p><strong>Template for G/L Journal Excel Import</strong></p>
+<p>Each of our Excel Import functions has a <strong>Help (File Layout)</strong> option, where the system will tell you what each column should be for that specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="image7.png" src="/Manual/assets/images/image7-a6b4149f-5a5f-40af-b09c-2866bcdcdc53-205f06916e09f24e4b5c9cff58277c0f.png" width="558" height="455" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>This screenshot does not contain all fields in template - please run the <strong>Import G/L Journal from Excel</strong> function, and set the <strong>Help (File Layout)</strong> to True to see remaining fields.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import GL Journal Help.png" src="/Manual/assets/images/Import GL Journal Help-7ffb662a-d547-4bd3-861b-e5f7327dad47-f302508e0f55d18a90216188abc69191.png" width="673" height="493" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-items-from-excel"><strong>Import Items from Excel</strong><a class="hash-link" aria-label="Direct link to import-items-from-excel" title="Direct link to import-items-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-items-from-excel">​</a></h3>
+<p>This function allows users to import Items from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Search for <strong>Import Items from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import Item Request.png" src="/Manual/assets/images/Import Item Request-9085ff5c-df22-4182-b88e-12dbfcc213d3-5b64500ba40aa57e8bfc9d8d64d5a863.png" width="670" height="496" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the Item List to review your new Items</li>
+</ul>
+<p><strong>Template for Items Excel Import</strong></p>
+<p>The Import from Excel <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="Item Template.png" src="/Manual/assets/images/Item Template-03559142-5f9e-44ea-ad66-af8e115822c3-8ca3d2ad36e680840e7f52c680fc0b3d.png" width="497" height="475" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>This screenshot does not contain all fields in template - please run <strong>Import Item from Excel</strong> function, and set the <strong>Help (File Layout)</strong> to True to see remaining fields.</li>
+<li>If an Item exists with the same number, then their details will be overwritten.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-resources-from-excel"><strong>Import Resources from Excel</strong><a class="hash-link" aria-label="Direct link to import-resources-from-excel" title="Direct link to import-resources-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-resources-from-excel">​</a></h3>
+<p>This function allows users to import Resources from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Go to <strong>Import Resources from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import Resources from Excel.png" src="/Manual/assets/images/Import Resources from Excel-9156e121-6848-4bbb-abde-b512e77351e5-b263ccf2b842636fa297ab9749b38dae.png" width="668" height="489" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the Resource List to review your new Resources</li>
+</ul>
+<p><strong>Template for Resource Excel Import</strong></p>
+<p>The Resource Excel Import function <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="Resource Template.png" src="/Manual/assets/images/Resource Template-18f021ea-a0e7-472c-b01a-f88ebb0125bf-422852c736d0686f9f4458f92c478c80.png" width="495" height="473" class="img_ev3q"></p>
+<ul>
+<li>Please note if a Resource exists with the same number then their details will be overwritten.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-vendor-from-excel"><strong>Import Vendor from Excel</strong><a class="hash-link" aria-label="Direct link to import-vendor-from-excel" title="Direct link to import-vendor-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-vendor-from-excel">​</a></h3>
+<p>This function allows users to import Vendors from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Go to <strong>Import Vendors from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import Vendors from excel.png" src="/Manual/assets/images/Import Vendors from excel-3e648a9c-b5cf-4d46-b5c1-91fb8d83819c-accf8494475d4a7d2e3f31415d82258f.png" width="670" height="488" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the Vendor List to review your new Vendors</li>
+</ul>
+<p><strong>Template for Vendors Excel Import</strong></p>
+<p>The Vendor Excel Import functions <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="Vendor Template.png" src="/Manual/assets/images/Vendor Template-6963ce68-03ce-441c-a678-0f16ac328739-abb9078fb035de1e183020ca251db22c.png" width="495" height="477" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>This screenshot does not contain all fields in template - please run <strong>Import Vendor from Excel</strong> function, and set the <strong>Help (File Layout)</strong> to True to see remaining fields.</li>
+<li>If a Vendor exists with the same number then their details will be overwritten.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-customers-from-excel"><strong>Import Customers from Excel</strong><a class="hash-link" aria-label="Direct link to import-customers-from-excel" title="Direct link to import-customers-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-customers-from-excel">​</a></h3>
+<p>This function allows users to import Customers from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Go to <strong>Import Customers from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import Customers from Excel.png" src="/Manual/assets/images/Import Customers from Excel-76603690-8d59-4850-b888-7f4ab5d57454-06e53bf19f1aa26c1419beaee18b8235.png" width="669" height="495" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the Customer List to review your new Customers</li>
+</ul>
+<p><strong>Template for Customer Excel Import</strong></p>
+<p>The Customer Excel Import functions <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="Customer Template.png" src="/Manual/assets/images/Customer Template-7eb6427c-6f15-44f4-8f3c-39e44b41942a-1c8098ecfc85fda80350c94cb6a723d0.png" width="498" height="476" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>This screenshot does not contain all fields in template - please run <strong>Import Customer from Excel</strong> function, and set the <strong>Help (File Layout)</strong> to True to see remaining fields.</li>
+<li>If a Customer exists with the same number then their details will be overwritten.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-fa-journal-from-excel"><strong>Import FA Journal from Excel</strong><a class="hash-link" aria-label="Direct link to import-fa-journal-from-excel" title="Direct link to import-fa-journal-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-fa-journal-from-excel">​</a></h3>
+<p>This function allows users to import FA Journals from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Go to <strong>Import FA Journals from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="image.png" src="/Manual/assets/images/image-eeffc7d7-9d5b-4668-84bf-3dfcb154c2c1-9e4581b21fe09561e40dd5a41706b6db.png" width="674" height="492" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the FA Journal to review your new journal entries</li>
+</ul>
+<p><strong>Template for FA Journal Excel Import</strong></p>
+<p>The FA Journal Excel Import functions <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="FA journal Template.png" src="/Manual/assets/images/FA journal Template-8f9f289e-93fd-4d95-96bb-0d6701b83bf4-b6273dc763f98178f29c695ca58138f5.png" width="496" height="446" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-jobstasks-from-excel"><strong>Import Jobs/Tasks from Excel</strong><a class="hash-link" aria-label="Direct link to import-jobstasks-from-excel" title="Direct link to import-jobstasks-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-jobstasks-from-excel">​</a></h3>
+<p>This function allows users to import Jobs/Tasks from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Go to <strong>Import Jobs/Tasks from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import Jobs from Excel.png" src="/Manual/assets/images/Import Jobs from Excel-bc33c64b-b2f1-4759-ac20-a6a05abc08a5-f519eea7f683328338a3e37f316f9c84.png" width="667" height="488" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to Projects to review your new entries</li>
+</ul>
+<p><strong>Template for Jobs/Tasks Excel Import</strong></p>
+<p>The Jobs/Tasks Excel Import functions <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="Jobs Template.png" src="/Manual/assets/images/Jobs Template-7be421fa-b3a4-4894-ac98-67599d03f16e-00a366eddcd3e0f04ada9ff77253f793.png" width="495" height="475" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>If a Project/Job/Task exists with the same number then their details will be overwritten.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-fixed-assets-from-excel"><strong>Import Fixed Assets from Excel</strong><a class="hash-link" aria-label="Direct link to import-fixed-assets-from-excel" title="Direct link to import-fixed-assets-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-fixed-assets-from-excel">​</a></h3>
+<p>This function allows users to import Fixed Assets from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Search for <strong>Import Fixed Assets from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import Fixed Assets from Excel v1.xlsx.png" src="/Manual/assets/images/Import Fixed Assets from Excel v1.xlsx-925dab8f-4295-4233-b8e6-126923966b8c-b0338746bfe8fbf51788e942a73d9cc0.png" width="673" height="496" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the Fixed Asset List to review your new Fixed Assets</li>
+</ul>
+<p><strong>Template for Fixed Assets Excel Import</strong></p>
+<p>The Import from Excel <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="Fixed Asset Tempate.png" src="/Manual/assets/images/Fixed Asset Tempate-f2dc8e82-7bf2-4f44-b785-689347fa65b5-69501d35ba868622382c82f9b34113d2.png" width="497" height="477" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>This screenshot does not contain all fields in template - please run <strong>Import Fixed Assets from Excel</strong> function, and set the <strong>Help (File Layout)</strong> to True to see remaining fields.</li>
+<li>If a Fixed Asset exists with the same number, then their details will be overwritten.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-job-journals-from-excel"><strong>Import Job Journals from Excel</strong><a class="hash-link" aria-label="Direct link to import-job-journals-from-excel" title="Direct link to import-job-journals-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-job-journals-from-excel">​</a></h3>
+<p>This function allows users to import Job Journals from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Search for <strong>Import Job Journals from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import Job Journal.png" src="/Manual/assets/images/Import Job Journal-f72ad287-1060-4635-a6f9-38f73d080e3b-cff0674c5ee0e46f4d299a0536a881a4.png" width="663" height="486" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the Job Journal List to review your new Job Journals</li>
+</ul>
+<p><strong>Template for Job Journals Excel Import</strong></p>
+<p>The Import from Excel <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="Job Journal Template.png" src="/Manual/assets/images/Job Journal Template-b2e92d00-ebaa-467e-8f1a-a3fcc202d40c-773dca70dc093dc0011aab7712bdd718.png" width="497" height="475" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>This screenshot does not contain all fields in template - please run <strong>Import Job Journals from Excel</strong> function, and set the <strong>Help (File Layout)</strong> to True to see remaining fields.</li>
+<li>If a Job Journal exists with the same number, then their details will be overwritten.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-item-journals-from-excel"><strong>Import Item Journals from Excel</strong><a class="hash-link" aria-label="Direct link to import-item-journals-from-excel" title="Direct link to import-item-journals-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-item-journals-from-excel">​</a></h3>
+<p>This function allows users to import Item Journals from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Search for <strong>Import Item Journals from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import item journal.png" src="/Manual/assets/images/Import item journal-9c8ce592-d681-40f5-ac85-8e8c349701ea-f1e5fed790101fbb2d73f8eceff535e0.png" width="663" height="487" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the Item Journal List to review your new Item Journals</li>
+</ul>
+<p><strong>Template for Item Journals Excel Import</strong></p>
+<p>The Import from Excel <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="Item Journal Template.png" src="/Manual/assets/images/Item Journal Template-74fd9348-417d-4b2f-b5e1-1f20f634fdec-0817c72b4463861946e090c00ffb421b.png" width="496" height="477" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>This screenshot does not contain all fields in template - please run <strong>Import Item Journals from Excel</strong> function, and set the <strong>Help (File Layout)</strong> to True to see remaining fields.</li>
+<li>If a Item Journal exists with the same number, then their details will be overwritten.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-job-budgets-from-excel"><strong>Import Job Budgets from Excel</strong><a class="hash-link" aria-label="Direct link to import-job-budgets-from-excel" title="Direct link to import-job-budgets-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-job-budgets-from-excel">​</a></h3>
+<p>This function allows users to import Job Budgets from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Search for <strong>Import Job Budgets from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import Job Budgets.png" src="/Manual/assets/images/Import Job Budgets-5c792811-baa1-4087-ae28-27331878b830-e283e7ec13a314abe65e49bbd6259ddd.png" width="663" height="492" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the Job Budget List to review your new Job Budgets</li>
+</ul>
+<p><strong>Template for Job Budgets Excel Import</strong></p>
+<p>The Import from Excel <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="Job Budget Template.png" src="/Manual/assets/images/Job Budget Template-0db51545-cd97-4f10-8917-6525fc99cd4f-b16864bdf3d98af227c39a61569f424b.png" width="497" height="445" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>This screenshot does not contain all fields in template - please run <strong>Import Job Budgets from Excel</strong> function, and set the <strong>Help (File Layout)</strong> to True to see remaining fields.</li>
+<li>If a Job Budget exists with the same number, then their details will be overwritten.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-gl-accounts-from-excel"><strong>Import G/L Accounts from Excel</strong><a class="hash-link" aria-label="Direct link to import-gl-accounts-from-excel" title="Direct link to import-gl-accounts-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-gl-accounts-from-excel">​</a></h3>
+<p>This function allows users to import G/L Accounts from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Search for <strong>Import G/L Accounts from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import GL Accounts.png" src="/Manual/assets/images/Import GL Accounts-44d2a3f8-1353-406d-9e32-78189e30dcd7-9968cdba39e236024e3922fd07949539.png" width="663" height="484" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the G/L Account List to review your new G/L Accounts</li>
+</ul>
+<p><strong>Template for G/L Accounts Excel Import</strong></p>
+<p>The Import from Excel <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="GL Account Template.png" src="/Manual/assets/images/GL Account Template-3436e02b-d2dc-4647-b1da-7c8ad9bd5775-80c5d0b73f908998f282ba8e920f4b27.png" width="499" height="478" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>If a G/L Account exists with the same number, then their details will be overwritten.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-access-controls-from-excel"><strong>Import Access Controls from Excel</strong><a class="hash-link" aria-label="Direct link to import-access-controls-from-excel" title="Direct link to import-access-controls-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-access-controls-from-excel">​</a></h3>
+<p>This function allows users to import Access Controls from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Search for <strong>Import Access Controls from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import Access Controls.png" src="/Manual/assets/images/Import Access Controls-8822d7ff-8d1c-4de5-8d80-b0b0ea2b79fe-efe3498bcee36b7fd668a77b6df0e10c.png" width="663" height="489" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the Access Control List to review your new Access Controls</li>
+</ul>
+<p><strong>Template for Access Controls Excel Import</strong></p>
+<p>The Import from Excel <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="Import Access Controls.png" src="/Manual/assets/images/Import Access Controls-f07bcca5-70fa-48da-99d2-2b50f72b820d-a105a74c80411d1fbe7d215d3b3a5da5.png" width="498" height="330" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>If a Access Control exists with the same number, then their details will be overwritten.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-dimension-values-from-excel"><strong>Import Dimension Values from Excel</strong><a class="hash-link" aria-label="Direct link to import-dimension-values-from-excel" title="Direct link to import-dimension-values-from-excel" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-dimension-values-from-excel">​</a></h3>
+<p>This function allows users to import Dimension Values from Excel using a pre-defined excel template file.</p>
+<ul>
+<li>Search for <strong>Import Dimension Values from Excel</strong></li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Import Dimension Values.png" src="/Manual/assets/images/Import Dimension Values-21c55f95-5a9d-48a2-9476-ffb4a6c2622c-3d19068332f939b45f1152825043eaae.png" width="663" height="493" class="img_ev3q"></p>
+<ul>
+<li>Set <strong>Choose Excel File</strong> to True, and select the file that you want to import</li>
+<li>To view the required file layout set <strong>Help (File Layout)</strong> to True</li>
+<li>Click <strong>OK</strong></li>
+<li>Go to the Dimension Value List to review your new Dimension Values</li>
+</ul>
+<p><strong>Template for Dimension Values Excel Import</strong></p>
+<p>The Import from Excel <strong>Help (File Layout)</strong> option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:</p>
+<p><img decoding="async" loading="lazy" alt="Dimension Values Template.png" src="/Manual/assets/images/Dimension Values Template-d93327b5-1fc3-49bc-b673-00e46b0c96cc-8609ea7799956e8fbf104ac07db98fce.png" width="498" height="389" class="img_ev3q"></p>
+<p>Please note:</p>
+<ul>
+<li>If a Dimension Value exists with the same number, then their details will be overwritten.</li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Manual/category/imports-from-excel/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Imports from Excel</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Manual/AddOns-Integration/Import-from-Excel/pricing/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Pricing</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#overview-import-from-excel-functions"><strong>Overview Import from Excel functions</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#dynamic-imports"><strong>Dynamic Imports</strong></a><ul><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#setting-up-dynamic-import-codes"><strong>Setting up Dynamic Import Codes</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-documentsjournals-using-dynamic-import-codes"><strong>Import Documents/Journals using Dynamic Import Codes</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#journal-posting"><strong>Journal Posting</strong></a></li></ul></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#static-imports"><strong>Static Imports</strong></a><ul><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-gl-journal-from-excel"><strong>Import G/L Journal from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-items-from-excel"><strong>Import Items from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-resources-from-excel"><strong>Import Resources from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-vendor-from-excel"><strong>Import Vendor from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-customers-from-excel"><strong>Import Customers from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-fa-journal-from-excel"><strong>Import FA Journal from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-jobstasks-from-excel"><strong>Import Jobs/Tasks from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-fixed-assets-from-excel"><strong>Import Fixed Assets from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-job-journals-from-excel"><strong>Import Job Journals from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-item-journals-from-excel"><strong>Import Item Journals from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-job-budgets-from-excel"><strong>Import Job Budgets from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-gl-accounts-from-excel"><strong>Import G/L Accounts from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-access-controls-from-excel"><strong>Import Access Controls from Excel</strong></a></li><li><a class="table-of-contents__link toc-highlight" href="/Manual/AddOns-Integration/Import-from-Excel/Manual/#import-dimension-values-from-excel"><strong>Import Dimension Values from Excel</strong></a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">© 2024 Fusion5, Site built with Docusaurus</div></div></div></footer></div>
+</body>
+</html>
