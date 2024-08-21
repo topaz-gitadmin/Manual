@@ -4,6 +4,8 @@ sidebar_position: 1
 sidebar_class_name: 'nav-det-level'
 ---
 
+[[_TOC_]]
+
 # <span className="fusion5-text">Imports from Excel</span>
 
 ## **Overview Import from Excel functions**
@@ -16,12 +18,23 @@ Users can create their own templates based on the file formats available to them
 
 - Import data to General Journals
 - Create or update Purchase Invoices and Credit Memos
-- Create of update Sales Invoices and Credit Memos
+- Create or update Sales Invoices and Credit Memos
 
 **Static Imports:**
 
 Static Data imports use a specified format and are designed for importing substantial amounts of data into the tables listed below:
-- Items, Resources, Vendors,  Customers, FA Journals, Jobs/Tasks, Fixed Assets, Job Journal, G/L Journal, Job Budgets, Access Controls, and Dimensions.
+- G/L Journal
+- Items
+- Resources
+- Vendors
+- Customers
+- Fixed Assets
+- FA Journals
+- Jobs/Tasks
+- Job Journal
+- Job Budgets
+- Access Controls
+- Dimensions
 
 NB: Shortcut dimensions have been included in the templates and can be imported within the static data imports.
 
@@ -33,16 +46,16 @@ Set up Dynamic Import Codes to create user definable formats to import data into
 
 Go to **Dynamic Import Codes**. This is accessible from the following places:
 -	Search > **Dynamic Import Codes**
--	From General Journal > Process > **Dynamic Import Codes**
--	From the Purchase Invoice list > Process > **Dynamic Import Codes**
--	From the Sales Invoice list > Process > **Dynamic Import Codes**
+-	From General Journal > Home > **Dynamic Import Codes**
+-	From the Purchase Invoice list > Home > **Dynamic Import Codes**
+-	From the Sales Invoice list > Home > **Dynamic Import Codes**
 
 
 ![Access Dynamic Import Codes.png](.img/Access%20Dynamic%20Import%20Codes-860816bc-6693-43b9-b4b9-ace4a7f8c9a7.png)
 
 To create new dynamic import code enter the following information:
 
--   **Journal Code** - User definable code to define import layout
+-   **Code** - User definable code to define import layout
 -   **Import Type** - Options to create General journal, Sales or Purchase Invoices
 -   **Description** - User definable description to define import layout
 -   **Excel Row of First Data Line** - Line Number for first journal line in excel where data to be imported starts
@@ -86,6 +99,7 @@ The following fields are Mandatory and must be included in the excel file or hav
 - **Account Type** - Account Type for Journal Line.
 - **Account No.** - Number based on account type.
 - **Amount** - Value for Journal.
+- **Document No.** - this is only mandatory if the no. series is not specified on the journal
 
 _**Optional Fields**_
 
@@ -202,24 +216,24 @@ _**Optional Fields**_
 
 To import Journals and Documents using the Dynamic Import Codes; go to **Import from Excel with Dynamic columns**.  This is accessible from the following places:
 -	Search > **Import from Excel with Dynamic Columns**
--	From General Journal > Process > **Import from Excel with Dynamic Columns**
--	From the Purchase Invoice list > Process > **Import from Excel with Dynamic Columns**
--	From the Sales Invoice list > Process > **Import from Excel with Dynamic Columns**
+-	From General Journal > Home > **Import from Excel with Dynamic Columns**
+-	From the Purchase Invoice list > Home > **Import from Excel with Dynamic Columns**
+-	From the Sales Invoice list > Home > **Import from Excel with Dynamic Columns**
 
 
 ![Import from Excel function.png](.img/Import%20from%20Excel%20function-405986d5-0f47-468f-9515-d52caa045516.png)
 
 Enter required information on the request form:
 
-- **Import Type** - General Journal, Purchase Document, Sales Document
-- **Import Code** - Select the required import code as defined above
+- **Import Type** - Select relevant option: General Journal, Purchase Document, Sales Document
+- **Import Code** - Select the required import code as defined above; please note this will be pre-populated with the first relevant code where the report is run from the Journal or Document
 - **Override Posting Date** – Populate with date to override the posting date, or leave blank to import date from file
 - **Override Journal Template** – Populate to override journal template in file (only relevant for journals)
 - **Override Journal Batch** - Populate to override journal batch in file (only relevant for journals)
 - **Write Option** – Select option:
   - Append to add to existing lines on journal batch, purchase invoice or sales invoice
   - Overwrite to replace lines on journal batch, purchase invoice or sales invoice (NB: This is only possible on Purchase/Sales Documents if a Document No. is supplied in the dataset)
--  **Choose Excel File** - This opens the standard Microsoft File selection utility. Navigate to the required file for import
+-  **Choose Excel File** - This opens the standard Microsoft File selection utility. Navigate to the required file for import.  NB: if multiple worksheets are available in the workbook an option to select worksheet will pop up.
 
 
 ![Dynamic Import Request Page.png](.img/Dynamic%20Import%20Request%20Page-04e7ca76-3a14-4bf0-ad4d-72d7531da675.png)
@@ -235,22 +249,22 @@ Journal can be posted as per standard journal posting routines. Documents can be
 
 ## **Static Imports**
 
-Static Data imports use a specified format and are designed for importing substantial amounts of data.
+Static imports use a specified format and are designed for importing substantial amounts of data.
 
 You can find these Static Imports by searching for "Import from Excel". 
 
 1. __Import G/L Journal from Excel:__ Allows users to import General Ledger journal entries, including account codes, descriptions, posting dates and amounts from an Excel file.
+ 1. __Import G/L Accounts from Excel:__ Enables the import of General Ledger account information, including account codes, descriptions, and account types from an Excel file.
 1. __Import Item from Excel:__ Allows users to import item data, including item codes, descriptions, prices, and other details, directly from an Excel file into the system.
+ 1. __Import Item Journal from Excel:__ Enables the import of item journal entries, including item codes, descriptions, quantities, and values from an Excel file.
  1. __Import Resources from Excel:__ Facilitates the import of resource information from an Excel spreadsheet.
  1. __Import Vendors from Excel:__ Enables the import of vendor details, including vendor names, addresses, payment terms, posting groups and other data from an Excel file.
  1. __Import Customers from Excel:__ Allows users to import customer data, including customer names, addresses, payment terms, posting groups and other data from an Excel file.
+ 1. __Import Fixed Assets from Excel:__ Allows users to import fixed asset information, including asset codes, descriptions and classification from an Excel file.
  1. __Import FA Journal from Excel:__ Facilitates the import of Fixed Assets journal entries, including asset codes, posting dates, and values from an Excel spreadsheet.
  1. __Import Job/Tasks from Excel:__ Enables the import of job and task details, such as job codes, job descriptions, job tasks, bill to customer, and start and end dates from an Excel file.
- 1. __Import Fixed Assets from Excel:__ Allows users to import fixed asset information, including asset codes, descriptions and classification from an Excel file.
  1. __Import Job Journal from Excel:__ Facilitates the import of job journal entries, including job codes, posting date, quantity, cost and price from an Excel spreadsheet.
- 1. __Import Item Journal from Excel:__ Enables the import of item journal entries, including item codes, descriptions, quantities, and values from an Excel file.
  1. __Import Job Budgets from Excel:__ Facilitates the import of job budget details, including job codes, budgeted costs, and revenues from an Excel spreadsheet.
- 1. __Import G/L Accounts from Excel:__ Enables the import of General Ledger account information, including account codes, descriptions, and account types from an Excel file.
  1. __Import Access Controls from Excel:__ Allows users to import access control settings, including approval user, approval group and limit from an Excel file.
  1. __Import Dimension Values from Excel:__ Facilitates the import of dimension values, including dimension codes, dimension values and descriptions from an Excel spreadsheet.
 
@@ -282,7 +296,27 @@ Please note:
 
 ![Import GL Journal Help.png](.img/Import%20GL%20Journal%20Help-7ffb662a-d547-4bd3-861b-e5f7327dad47.png)
 
+### **Import G/L Accounts from Excel**
 
+This function allows users to import G/L Accounts from Excel using a pre-defined excel template file.
+
+- Search for **Import G/L Accounts from Excel**
+
+![Import GL Accounts.png](.img/Import%20GL%20Accounts-44d2a3f8-1353-406d-9e32-78189e30dcd7.png)
+
+- Set **Choose Excel File** to True, and select the file that you want to import
+- To view the required file layout set **Help (File Layout)** to True 
+- Click **OK**
+- Go to the G/L Account List to review your new G/L Accounts
+
+**Template for G/L Accounts Excel Import**
+
+The Import from Excel **Help (File Layout)** option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:
+
+![GL Account Template.png](.img/GL%20Account%20Template-3436e02b-d2dc-4647-b1da-7c8ad9bd5775.png)
+
+Please note: 
+- If a G/L Account exists with the same number, then their details will be overwritten.
 
 ### **Import Items from Excel**
 
@@ -309,6 +343,29 @@ Please note:
 - This screenshot does not contain all fields in template - please run **Import Item from Excel** function, and set the **Help (File Layout)** to True to see remaining fields.
 - If an Item exists with the same number, then their details will be overwritten.
 
+### **Import Item Journals from Excel**
+
+This function allows users to import Item Journals from Excel using a pre-defined excel template file.
+
+- Search for **Import Item Journals from Excel**
+
+![Import item journal.png](.img/Import%20item%20journal-9c8ce592-d681-40f5-ac85-8e8c349701ea.png)
+
+
+- Set **Choose Excel File** to True, and select the file that you want to import
+- To view the required file layout set **Help (File Layout)** to True 
+- Click **OK**
+- Go to the Item Journal List to review your new Item Journals
+
+**Template for Item Journals Excel Import**
+
+The Import from Excel **Help (File Layout)** option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:
+
+![Item Journal Template.png](.img/Item%20Journal%20Template-74fd9348-417d-4b2f-b5e1-1f20f634fdec.png)
+
+Please note: 
+- This screenshot does not contain all fields in template - please run **Import Item Journals from Excel** function, and set the **Help (File Layout)** to True to see remaining fields.
+- If a Item Journal exists with the same number, then their details will be overwritten.
 
 ### **Import Resources from Excel**
 
@@ -388,6 +445,29 @@ Please note:
 - This screenshot does not contain all fields in template - please run **Import Customer from Excel** function, and set the **Help (File Layout)** to True to see remaining fields.
 - If a Customer exists with the same number then their details will be overwritten.
 
+### **Import Fixed Assets from Excel**
+
+This function allows users to import Fixed Assets from Excel using a pre-defined excel template file.
+
+- Search for **Import Fixed Assets from Excel**
+
+![Import Fixed Assets from Excel v1.xlsx.png](.img/Import%20Fixed%20Assets%20from%20Excel%20v1.xlsx-925dab8f-4295-4233-b8e6-126923966b8c.png)
+
+- Set **Choose Excel File** to True, and select the file that you want to import
+- To view the required file layout set **Help (File Layout)** to True 
+- Click **OK**
+- Go to the Fixed Asset List to review your new Fixed Assets
+
+**Template for Fixed Assets Excel Import**
+
+The Import from Excel **Help (File Layout)** option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:
+
+![Fixed Asset Tempate.png](.img/Fixed%20Asset%20Tempate-f2dc8e82-7bf2-4f44-b785-689347fa65b5.png)
+
+Please note: 
+- This screenshot does not contain all fields in template - please run **Import Fixed Assets from Excel** function, and set the **Help (File Layout)** to True to see remaining fields.
+- If a Fixed Asset exists with the same number, then their details will be overwritten.
+
 ### **Import FA Journal from Excel**
 
 This function allows users to import FA Journals from Excel using a pre-defined excel template file.
@@ -436,28 +516,7 @@ The Jobs/Tasks Excel Import functions **Help (File Layout)** option will tell yo
 Please note:
 - If a Project/Job/Task exists with the same number then their details will be overwritten.
 
-### **Import Fixed Assets from Excel**
 
-This function allows users to import Fixed Assets from Excel using a pre-defined excel template file.
-
-- Search for **Import Fixed Assets from Excel**
-
-![Import Fixed Assets from Excel v1.xlsx.png](.img/Import%20Fixed%20Assets%20from%20Excel%20v1.xlsx-925dab8f-4295-4233-b8e6-126923966b8c.png)
-
-- Set **Choose Excel File** to True, and select the file that you want to import
-- To view the required file layout set **Help (File Layout)** to True 
-- Click **OK**
-- Go to the Fixed Asset List to review your new Fixed Assets
-
-**Template for Fixed Assets Excel Import**
-
-The Import from Excel **Help (File Layout)** option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:
-
-![Fixed Asset Tempate.png](.img/Fixed%20Asset%20Tempate-f2dc8e82-7bf2-4f44-b785-689347fa65b5.png)
-
-Please note: 
-- This screenshot does not contain all fields in template - please run **Import Fixed Assets from Excel** function, and set the **Help (File Layout)** to True to see remaining fields.
-- If a Fixed Asset exists with the same number, then their details will be overwritten.
 
 ### **Import Job Journals from Excel**
 
@@ -482,29 +541,7 @@ Please note:
 - This screenshot does not contain all fields in template - please run **Import Job Journals from Excel** function, and set the **Help (File Layout)** to True to see remaining fields.
 - If a Job Journal exists with the same number, then their details will be overwritten.
 
-### **Import Item Journals from Excel**
 
-This function allows users to import Item Journals from Excel using a pre-defined excel template file.
-
-- Search for **Import Item Journals from Excel**
-
-![Import item journal.png](.img/Import%20item%20journal-9c8ce592-d681-40f5-ac85-8e8c349701ea.png)
-
-
-- Set **Choose Excel File** to True, and select the file that you want to import
-- To view the required file layout set **Help (File Layout)** to True 
-- Click **OK**
-- Go to the Item Journal List to review your new Item Journals
-
-**Template for Item Journals Excel Import**
-
-The Import from Excel **Help (File Layout)** option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:
-
-![Item Journal Template.png](.img/Item%20Journal%20Template-74fd9348-417d-4b2f-b5e1-1f20f634fdec.png)
-
-Please note: 
-- This screenshot does not contain all fields in template - please run **Import Item Journals from Excel** function, and set the **Help (File Layout)** to True to see remaining fields.
-- If a Item Journal exists with the same number, then their details will be overwritten.
 
 ### **Import Job Budgets from Excel**
 
@@ -529,27 +566,7 @@ Please note:
 - This screenshot does not contain all fields in template - please run **Import Job Budgets from Excel** function, and set the **Help (File Layout)** to True to see remaining fields.
 - If a Job Budget exists with the same number, then their details will be overwritten.
 
-### **Import G/L Accounts from Excel**
 
-This function allows users to import G/L Accounts from Excel using a pre-defined excel template file.
-
-- Search for **Import G/L Accounts from Excel**
-
-![Import GL Accounts.png](.img/Import%20GL%20Accounts-44d2a3f8-1353-406d-9e32-78189e30dcd7.png)
-
-- Set **Choose Excel File** to True, and select the file that you want to import
-- To view the required file layout set **Help (File Layout)** to True 
-- Click **OK**
-- Go to the G/L Account List to review your new G/L Accounts
-
-**Template for G/L Accounts Excel Import**
-
-The Import from Excel **Help (File Layout)** option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:
-
-![GL Account Template.png](.img/GL%20Account%20Template-3436e02b-d2dc-4647-b1da-7c8ad9bd5775.png)
-
-Please note: 
-- If a G/L Account exists with the same number, then their details will be overwritten.
 
 ### **Import Access Controls from Excel**
 
