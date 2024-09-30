@@ -4,23 +4,34 @@ sidebar_position: 1
 sidebar_class_name: 'nav-det-level'
 ---
 
+[[_TOC_]]
+
 # <span className="fusion5-text">Imports from Excel</span>
 
 ## **Overview Import from Excel functions**
 
-The Import from Excel extension enables the import of Microsoft Excel files of various formats to import Master Data, Sales Documents and Purchase Documents and Journals in Business Central.  This extension includes some static imports where the file format is pre-defined (this is available for master data, and general journals), and also dynamic imports where the user can create a template based on a required excel format (this is only available for journals and purchase/sales documents).
+The Import from Excel extension enables import of data in Business Central using templates created in Microsoft Excel. This includes importing Master Data as well as Transactional Data, such as Sales Documents, Purchase Documents, and Journals.  
+
+This extension supports both static and dynamic imports. It includes static imports with predefined file formats for Master Data and General Journals. For Journals and Purchase/Sales Documents, it also offers dynamic imports, allowing users to create custom templates based on their specific Excel formats.
 
 **Dynamic Imports:**
 
-Users can create their own templates based on the file formats available to them from external systems, and define how the data should be managed as it is imported.  When creating Dynamic Import Templates, the function allows users to import the column definition from the excel file so they do not have to set it up manually, and then map the column data to all relevant fields in the document/journal in BC.  They can also set default values where the required information is not available in the file. Templates can be set up to: 
+Users can create custom templates in Microsoft Excel based on file formats from external systems and specify how data should be managed during import. When defining dynamic import codes, column definitions can be directly imported from these templates, streamlining the setup process. Users can then map the column data to the relevant fields in Business Central documents or journals and set default values for any required information missing from the file. 
+
+Templates can be set up to: 
 
 - Import data to General Journals
 - Create or update Purchase Invoices and Credit Memos
 - Create or update Sales Invoices and Credit Memos
 
+NB: Dynamic Imports are used to import documents and journals. For import of Master Data, Static Import should be used.
+
 **Static Imports:**
 
-Static Data imports use a specified format and are designed for importing substantial amounts of data into the tables listed below:
+Static Data imports use a specified format and are designed for importing substantial amounts of Master as well as Transactional data. 
+
+At present it includes import into the tables listed below:
+
 - G/L Journal
 - Items
 - Resources
@@ -31,8 +42,9 @@ Static Data imports use a specified format and are designed for importing substa
 - Jobs/Tasks
 - Job Journal
 - Job Budgets
-- Access Controls
+- User Roles
 - Dimensions
+- Purchase Invoice/Credit
 
 NB: Shortcut dimensions have been included in the templates and can be imported within the static data imports.
 
@@ -40,7 +52,8 @@ NB: Shortcut dimensions have been included in the templates and can be imported 
 
 ### **Setting up Dynamic Import Codes**
 
-Set up Dynamic Import Codes to create user definable formats to import data into Purchase and Sales Documents, and Journals.
+To use Dynamic Imports, you first need to set up Dynamic Import Codes. These can be created to import Purchase Documents, Sales Documents and Journals.
+
 
 Go to **Dynamic Import Codes**. This is accessible from the following places:
 -	Search > **Dynamic Import Codes**
@@ -53,8 +66,8 @@ Go to **Dynamic Import Codes**. This is accessible from the following places:
 
 To create new dynamic import code enter the following information:
 
--   **Code** - User definable code to define import layout
--   **Import Type** - Options to create General journal, Sales or Purchase Invoices
+-   **Code** - User definable code to specify import layout
+-   **Import Type** - Select from General journal, Purchase Document or Sales Document
 -   **Description** - User definable description to define import layout
 -   **Excel Row of First Data Line** - Line Number for first journal line in excel where data to be imported starts
 
@@ -62,7 +75,7 @@ To create new dynamic import code enter the following information:
 
 
 
-Select **Import Columns from File** to import an excel file to create required column layout, and map to corresponding journal fields:
+Select **Import Columns from File** to import and setup columns from an excel file. Map these columns to corresponding journal fields:
 
 - **Excel Column No** – Column No from Excel or manually entered no. after the excel column numbers
 - **Excel Content** – Column heading from excel if Imported or blank for defaults
@@ -73,6 +86,9 @@ Select **Import Columns from File** to import an excel file to create required c
 
 **Sample Excel File Layout**
 
+An example of an Excel file with corresponding mapping is provided below. Where the Excel file does not contain values a default value has been mapped for the same. 
+
+**Please note** that the default value is applied to all transactions and lines contained in the Excel template.
 
 ![Sample File Layout.png](.img/Sample%20File%20Layout-4f706de0-4564-448f-af9c-830f7b25e9a4.png)
 
@@ -83,21 +99,23 @@ Select **Import Columns from File** to import an excel file to create required c
 
 
 
-#### **Field Selection for Dynamic Journal Template** 
+#### **Dynamic General Journal Template - Field Selection** 
 
 When creating a **Dynamic Import Code** template to import General Journals the field selections are as follow:
 
-_**Mandatory Fields for Journal**_
+_**Mandatory Fields**_
 
-The following fields are Mandatory and must be included in the excel file or have a default value supplied.
+The following fields are Mandatory and must be included in the excel file or have a default value supplied in the column mapping.
 
-- **Journal Template Name** - Standard Dynamics BC template name to define type of journal
-- **Journal Batch Name** - Batch Name must already exist.
+- **Journal Template Name** - Standard Dynamics BC template name to define type of journal. **(*)**
+- **Journal Batch Name** - Batch Name must already exist.  **(*)**
 - **Posting Date** - Journal Posting Date.
-- **Account Type** - Account Type for Journal Line.
-- **Account No.** - Number based on account type.
+- **Account Type** - Account Type for Journal Line.  **(*)**
+- **Account No.** - Number based on account type.  **(*)**
 - **Amount** - Value for Journal.
-- **Document No.** - this is only mandatory if the no. series is not specified on the journal
+- **Document No.** - this is only mandatory if the no. series is not specified on the journal template or batch.
+
+**(*)** Values provided under these columns must be defined in Business Central, else an error message will be displayed on import.
 
 _**Optional Fields**_
 
@@ -105,7 +123,7 @@ All optional fields can be supplied in the import mapping or left to default in 
 
 - **Document No.**
 - **Description**
-- **Dimensions 1-8** - Global and Shortcut dimensions can be included in template as separate columns based on the company dimension setup
+- **Shortcut Dimensions 1-8** - Global and Shortcut dimensions can be included in the template as separate columns based on the dimension setup for the company
 - **Bal. Account Type**
 - **Bal. Account No.**
 - **Document Date**
@@ -134,7 +152,7 @@ All optional fields can be supplied in the import mapping or left to default in 
 When creating a **Dynamic Import Code** template to import Purchase Invoices and Credit Memos the field selections are as follow:
 
 
-**_Mandatory Fields_** for Purchase Document (Hdr) is for Header fields and (Line) is for the lines:
+**_Mandatory Fields_** for Purchase Document. **(Hdr)** is for Header fields and **(Line)** is for the lines:
 - **Document No. (Hdr)**
 - **Buy from Vendor No. (Hdr)**
 - **Vendor Invoice No. (Hdr) or Vendor Credit Memo No. (Hdr)**
@@ -144,7 +162,7 @@ When creating a **Dynamic Import Code** template to import Purchase Invoices and
 - **Quantity (Line)**
 - **Direct Unit Cost (Line)**
 
-NB: If Mandatory fields are not in the excel file, add additional lines below the excel fields; populate Excel column no, Journal Import Field name and Default Value (such as Account Type in screenshot above)
+**NB**: If Mandatory fields are not in the excel file, add additional lines below the excel fields; populate Excel column no, Import Field name and Default Value (such as Account Type in screenshot above)
 
 _**Optional Fields**_
 
@@ -174,7 +192,7 @@ _**Optional Fields**_
 When creating a **Dynamic Import Code** template to import Sales Invoices and Credit Memos the field selections are as follow:
 
 
-**_Mandatory Fields_** for Sales Document (Hdr) is for Header fields and (Line) is for the lines:
+**_Mandatory Fields_** for Sales Document. **(Hdr)** is for Header fields and **(Line)** is for the lines:
 
 - **Sell-to Customer No. (Hdr)**
 - **Document Date (Hdr)**
@@ -223,25 +241,25 @@ To import Journals and Documents using the Dynamic Import Codes; go to **Import 
 
 Enter required information on the request form:
 
-- **Import Type** - Select relevant option: General Journal, Purchase Document, Sales Document
-- **Import Code** - Select the required import code as defined above; please note this will be pre-populated with the first relevant code where the report is run from the Journal or Document
+- **Import Type** - Select relevant option: General Journal, Purchase Document, Sales Document. If the Import from Excel function is chosen from General Journal/Purchase Invoice list/Sales Invoice List, the Import Type will be populated with the correct type for it.
+- **Import Code** - Select the required import code as defined above; please note this will be pre-populated with the first relevant code for the Import Type selected above.
 - **Override Posting Date** – Populate with date to override the posting date, or leave blank to import date from file
-- **Override Journal Template** – Populate to override journal template in file (only relevant for journals)
-- **Override Journal Batch** - Populate to override journal batch in file (only relevant for journals)
+- **Override Journal Template** – Select a value from the dropdown to override the journal template value in file (only relevant for journals)
+- **Override Journal Batch** - Select a value from the dropdown to override journal batch in file (only relevant for journals)
 - **Write Option** – Select option:
   - Append to add to existing lines on journal batch, purchase invoice or sales invoice
-  - Overwrite to replace lines on journal batch, purchase invoice or sales invoice (NB: This is only possible on Purchase/Sales Documents if a Document No. is supplied in the dataset)
+  - Overwrite to replace lines on journal batch, purchase invoice or sales invoice (NB: This is possible on Purchase/Sales Documents only if a Document No. is supplied in the Excel Template)
 -  **Choose Excel File** - This opens the standard Microsoft File selection utility. Navigate to the required file for import.  NB: if multiple worksheets are available in the workbook an option to select worksheet will pop up.
 
 
 ![Dynamic Import Request Page.png](.img/Dynamic%20Import%20Request%20Page-04e7ca76-3a14-4bf0-ad4d-72d7531da675.png)
--   **Workbook File Name** - Filename to be imported
+-   **Workbook File Name** - Displays the Workbook name to be imported
 
--   **Worksheet Name** - Work Sheet in file
+-   **Worksheet Name** - Displays the Worksheet being imported from
 
-### **Journal Posting**
+### **Posting**
 
-Navigate to the required Journal template/batch or navigate to the Sales Invoice or Purchase Invoice list page.
+Navigate to the desired Journal template/batch or go to the Sales Invoice or Purchase Invoice list page.
 
 Journal can be posted as per standard journal posting routines. Documents can be reviewed or posted.
 
@@ -249,7 +267,7 @@ Journal can be posted as per standard journal posting routines. Documents can be
 
 Static imports use a specified format and are designed for importing substantial amounts of data.
 
-You can find these Static Imports by searching for "Import from Excel". 
+You can locate these Static Imports by searching for "Import from Excel"
 
 1. __Import G/L Journal from Excel:__ Allows users to import General Ledger journal entries, including account codes, descriptions, posting dates and amounts from an Excel file.
  1. __Import G/L Accounts from Excel:__ Enables the import of General Ledger account information, including account codes, descriptions, and account types from an Excel file.
@@ -299,7 +317,6 @@ Please note:
 This function allows users to import G/L Accounts from Excel using a pre-defined excel template file.
 
 - Search for **Import G/L Accounts from Excel**
-
 ![Import GL Accounts.png](.img/Import%20GL%20Accounts-44d2a3f8-1353-406d-9e32-78189e30dcd7.png)
 
 - Set **Choose Excel File** to True, and select the file that you want to import
@@ -564,29 +581,24 @@ Please note:
 - This screenshot does not contain all fields in template - please run **Import Job Budgets from Excel** function, and set the **Help (File Layout)** to True to see remaining fields.
 - If a Job Budget exists with the same number, then their details will be overwritten.
 
+### **Import User Roles from Excel**
 
+This function allows users to import additional User Role associations from Excel using a pre-defined excel template file.
 
-### **Import Access Controls from Excel**
+- Search for **Import User Roles from Excel**
 
-This function allows users to import Access Controls from Excel using a pre-defined excel template file.
-
-- Search for **Import Access Controls from Excel**
-
-![Import Access Controls.png](.img/Import%20Access%20Controls-8822d7ff-8d1c-4de5-8d80-b0b0ea2b79fe.png)
+![Import User Roles.PNG](.img/UserRoles-3a690b57-6dee-4b61-9391-8c3522196267.PNG)
 
 - Set **Choose Excel File** to True, and select the file that you want to import
 - To view the required file layout set **Help (File Layout)** to True 
 - Click **OK**
-- Go to the Access Control List to review your new Access Controls
+- Go to the User List to review your new User Role associations
 
-**Template for Access Controls Excel Import**
+**Template for User Roles Excel Import**
 
 The Import from Excel **Help (File Layout)** option will tell you what each column should be for the specific import function. You should design your data import using this to define the column layout:
 
-![Import Access Controls.png](.img/Import%20Access%20Controls-f07bcca5-70fa-48da-99d2-2b50f72b820d.png)
-
-Please note: 
-- If a Access Control exists with the same number, then their details will be overwritten.
+![UserRolesHelp.png](.img/UserRolesHelp-332cfe4e-93d9-4fee-9746-db1c42a877c8.png)
 
 ### **Import Dimension Values from Excel**
 
