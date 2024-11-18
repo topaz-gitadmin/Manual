@@ -4,16 +4,15 @@ sidebar_position: 1
 sidebar_class_name: 'nav-det-level'
 ---
 
-# <span className="fusion5-text">Imports from Excel</span>
+# <span className="fusion5-text">Import from Excel</span>
 
-## **Overview Import from Excel functions**
+## **Overview**
 
 The Import from Excel extension enables import of data in Business Central using templates created in Microsoft Excel. This includes importing Master Data as well as Transactional Data, such as Sales Documents, Purchase Documents, and Journals.  
 
-This extension supports both static and dynamic imports. It includes static imports with predefined file formats for Master Data and General Journals. For Journals and Purchase/Sales Documents, it also offers dynamic imports, allowing users to create custom templates based on their specific Excel formats.
+This extension supports both "static imports" with predefined file formats for Master Data and General Journals; and "dynamic imports" for Journals and Purchase/Sales Documents, allowing users to create custom templates based on their specific Excel formats.
 
-**Dynamic Imports:**
-
+## **Dynamic Imports**
 Users can create custom templates in Microsoft Excel based on file formats from external systems and specify how data should be managed during import. When defining dynamic import codes, column definitions can be directly imported from these templates, streamlining the setup process. Users can then map the column data to the relevant fields in Business Central documents or journals and set default values for any required information missing from the file. 
 
 Templates can be set up to: 
@@ -23,30 +22,6 @@ Templates can be set up to:
 - Create or update Sales Invoices and Credit Memos
 
 NB: Dynamic Imports are used to import documents and journals. For import of Master Data, Static Import should be used.
-
-**Static Imports:**
-
-Static Data imports use a specified format and are designed for importing substantial amounts of Master as well as Transactional data. 
-
-At present it includes import into the tables listed below:
-
-- G/L Journal
-- Items
-- Resources
-- Vendors
-- Customers
-- Fixed Assets
-- FA Journals
-- Jobs/Tasks
-- Job Journal
-- Job Budgets
-- User Roles
-- Dimensions
-- Purchase Invoice/Credit
-
-NB: Shortcut dimensions have been included in the templates and can be imported within the static data imports.
-
-## **Dynamic Imports**
 
 ### **Setting up Dynamic Import Codes**
 
@@ -178,12 +153,14 @@ _**Optional Fields**_
 - **Description (Line)**
 - **Description 2 (Line)**
 - **Dimensions 1-8 (Line)**
+- **IC Partner Code (Line)**
+- **IC Ref. Type (Line)**
+- **IC Reference (Line)**
 - **Gen. Prod. Posting Group**
 - **GST Prod. Posting Group**
 - **Project No.**
 - **Project Planning Line No.**
 - **Project Task No.**
-
 
 #### **Field Selection for Dynamic Sales Document Templates**
 
@@ -263,7 +240,25 @@ Journal can be posted as per standard journal posting routines. Documents can be
 
 ## **Static Imports**
 
-Static imports use a specified format and are designed for importing substantial amounts of data.
+Static Data imports use a specified format and are designed for importing substantial amounts of Master, as well as some transactional data. 
+
+At present it includes import into the tables listed below:
+
+- G/L Journal
+- Items
+- Resources
+- Vendors
+- Customers
+- Fixed Assets
+- FA Journals
+- Jobs/Tasks
+- Job Journal
+- Job Budgets
+- User Roles
+- Dimensions
+- Purchase Invoice/Credit
+
+NB: Shortcut dimensions have been included in the templates and can be imported within the static data imports.
 
 You can locate these Static Imports by searching for "Import from Excel"
 
