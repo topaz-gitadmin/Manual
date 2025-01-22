@@ -4,7 +4,7 @@ sidebar_position: 2
 sidebar_class_name: 'nav-det-level'
 ---
 
-# <span className="fusion5-text">Imports from Excel</span>
+# <span className="fusion5-text">Azure Blob Storage Document Attachments</span>
 
 ## Pricing
 
