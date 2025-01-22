@@ -46,3 +46,6 @@ example using powershell:
 ```
 cmd /C 'set "GIT_USER=zickbert" && yarn deploy'
 ```
+
+__!!!__
+use this from VS Code bvut be aware a login dialog is run and needed to deploy after the build 
