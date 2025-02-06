@@ -201,6 +201,9 @@ _**Optional Fields**_
 - **GST Prod. Posting Group (Line)**
 - **Return Reason Code (Line)**
 - **Work Type Code (Line)**
+- **IC Partner Code (Line)**
+- **IC Ref. Type (Line)**
+- **IC Reference (Line)**
 
 
 ### **Import Documents/Journals using Dynamic Import Codes**
