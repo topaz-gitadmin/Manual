@@ -1,0 +1,25 @@
+{
+    "name": "Fusion5 ruleset",
+    "rules": [
+        {
+            "id": "AS0081",
+            "action": "None",
+            "justification": "Internals visible - we know how to use it... Not necessary to show the warning..."
+        },
+        {
+            "id": "PTE0001",
+            "action": "None",
+            "justification": "PTE range - for pte apps only"
+        },
+        {
+            "id": "PTE0002",
+            "action": "None",
+            "justification": "PTE range - for pte apps only"
+        },
+        {
+            "id": "PTE0012",
+            "action": "None",
+            "justification": "Internals visible - we know how to use it... Not necessary to show the warning..."
+        }
+    ]
+}
