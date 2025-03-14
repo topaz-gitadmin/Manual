@@ -41,7 +41,19 @@ A new setup will need to be created for adding new attachments to a blob storage
 
 All Azure Access keys are lost in the copying and will need to be entered again for accessing Attachment blobs from the originating environment.
 
+## Blob Storage Setup
 
+For more information on Azure Blob Storage, including details on pricing and configuration, see <a href="https://azure.microsoft.com/en-us/services/storage/blobs/" target="_blank">Azure Blob Storage</a> (Microsoft article).
+
+It is recommended to setup a Container per Environment/Company for easier management and review.
+
+<i class="icon icon-info"></i> Important
+
+enable <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview" target="_blank">blob soft delete</a> for your Azure Blob Storage accounts, as this allows you to restore any documents or files that were deleted or overwritten by accident.
+
+<i class="icon icon-warning"></i> Caution
+
+It's crucial that Business Central has full read/write/delete access to the relevant blob container. For example, configuring access policies with time-based retention isn't supported, and neither are immutability and legal hold.
 
 
 
