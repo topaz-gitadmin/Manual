@@ -47,14 +47,13 @@ For more information on Azure Blob Storage, including details on pricing and con
 
 It is recommended to setup a Container per Environment/Company for easier management and review.
 
-<i class="icon icon-info"></i> Important
+__&#9757; Important__
 
 enable <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview" target="_blank">blob soft delete</a> for your Azure Blob Storage accounts, as this allows you to restore any documents or files that were deleted or overwritten by accident.
 
-<i class="icon icon-warning"></i> Caution
+__&#9888; Caution__
 
 It's crucial that Business Central has full read/write/delete access to the relevant blob container. For example, configuring access policies with time-based retention isn't supported, and neither are immutability and legal hold.
-
 
 
 
