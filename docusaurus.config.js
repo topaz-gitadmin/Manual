@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Business Central AddOns by Fusion5 Business Solutions',
+  title: 'Business Central AddOns by Fusion5 Limited - Transformation Partners',
   tagline: 'Extensions for Microsoft Dynamics 365 Business Central.',
   favicon: 'img/favicon.ico',
   trailingSlash: true,
