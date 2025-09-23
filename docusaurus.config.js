@@ -58,9 +58,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Business Central AddOns by Fusion5 Business Solutions',
+        title: 'Business Central AddOns by Fusion5 Limited - Transformation Partners',
         logo: {
-          alt: 'Fusion5 Business Solutions',
+          alt: 'Fusion5 Limited',
           src: 'img/logo.png',
         },
         items: [
@@ -106,7 +106,7 @@ const config = {
             ],
           },
         ],*/
-        copyright: `© ${new Date().getFullYear()} Fusion5, Site built with Docusaurus`,
+        copyright: `© ${new Date().getFullYear()} Fusion5 Ltd., Site built with Docusaurus`,
       },
       prism: {
         theme: prismThemes.github, //lightCodeTheme,
