@@ -87,6 +87,7 @@ The following fields are Mandatory and must be included in the excel file or hav
 - **Account No.** - Number based on account type.  **(*)**
 - **Amount** - Value for Journal.
 - **Document No.** - this is only mandatory if the no. series is not specified on the journal template or batch.
+- **Quantity** - a default value must be set to 1
 
 **(*)** Values provided under these columns must be defined in Business Central, else an error message will be displayed on import.
 
