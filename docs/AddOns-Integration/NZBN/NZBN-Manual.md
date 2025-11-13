@@ -4,9 +4,6 @@ sidebar_position: 1
 sidebar_class_name: 'nav-det-level'
 ---
 
-
-[[_TOC_]]
-
 # <span className="fusion5-text">NZBN</span>
 
 ## Overview
@@ -45,7 +42,7 @@ Optional: It is possible to update customer card's _Name_ value to match the nam
 ![image.png](.img/image-134fabf3-4107-46b8-ad10-40bdcb67fd86.png)
 
 If the company cannot be found or returns too many records, click on __Edit List__ and modify the search value to improve the results. 
-> Note: (_<tab>_) out of the field to trigger a refresh. 
+> Note: (_tab_) out of the field to trigger a refresh. 
 
 ## GST Registration No. lookup
 
