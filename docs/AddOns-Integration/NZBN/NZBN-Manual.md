@@ -39,7 +39,7 @@ Navigate to the _General_ fast tab and add the subscription key to __NZBN Subscr
 
 Optional: It is possible to update customer card's _Name_ value to match the name on NZBN record by clicking __Edit List__ and ticking the _Update Name_ checkbox and click __OK__.
 
-![image.png](.img/image-134fabf3-4107-46b8-ad10-40bdcb67fd86.png)
+![NZBNlookup.png](.img/NZBNlookup-bbd12339-204a-479d-b3a2-c09ff4e86c68.png)
 
 If the company cannot be found or returns too many records, click on __Edit List__ and modify the search value to improve the results. 
 > Note: (_tab_) out of the field to trigger a refresh. 
@@ -51,7 +51,7 @@ Once the NZBN is set:
 1. Click the Assist Edit button (...) next to the __GST Registration No.__ field under _Invoicing_ fast tab. 
 1. A list of GST numbers associated with the NZBN will appear. Either select GST no. or click __OK__ to select. 
 1. If required, the GST registration no. can be edited after the values are retrieved for formatting purpose. 
-![image.png](.img/image-254fb7eb-7b2f-4cfe-8046-53b2aee67ff0.png)
+![NZBN Edit.png](.img/NZBN%20Edit-fa9c9e81-794b-4480-be00-2ca1546b6655.png)
 
 > Note: GST Registration No. are not always defined or public on NZBN registrations.
 
